@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#logo {
+  padding: 50px;
+}
+
+.nav-item {
+  padding: 50px;
+
+}
+
+.nav-item:hover {
+  color: red;
+}

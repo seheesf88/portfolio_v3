@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route , Switch } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import MainContainer from './MainContainer';
+import AboutMe from './AboutMe';
+import Skills from './Skills';
+import Projects from './Projects';
+import Contact from './Contact';
+
+const My404 = () => {
+  return(
+    <div>
+      error!
     </div>
+  )
+}
+
+const App = () => {
+  return (
+    <main>
+      <Switch>
+        <Route exact path='/' component = { MainContainer } />
+        <Route exact path='/aboutme' component = { AboutMe } />
+        <Route exact path='/skills' component = { Skills } />
+        <Route exact path='/projects' component = { Projects } />
+        <Route exact path='/contact' component = { Contact } />
+      </Switch>
+    </main>
   );
 }
 

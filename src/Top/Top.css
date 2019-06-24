@@ -1,0 +1,11 @@
+.top {
+  height: 300px;
+  border: 1px solid;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+p {
+  font-size: 40px;
+  text-align: center;
+}
