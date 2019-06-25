@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Top.css';
+import WOW from "wowjs";
 // import { Link } from 'react-router-dom'
 
 
@@ -9,13 +10,24 @@ class Top extends Component{
 
   }
 
+
+  componentDidMount() {
+    const wow = new WOW.WOW();
+    wow.init();
+  }
+
   render(){
-
-
     return(
       <div className="top">
-        <p>Hi, I am front-end web developer who is very passionate to learn..</p>
-      </div>
+        <div className="wow slideInLeft"
+        data-wow-duration="2s"
+        data-wow-iteration="1"
+        data-wow-offset="10"
+        >
+          <p>Hi, I am SeHee!</p>
+          <p>I am Jr. Web developer!</p>
+        </div>
+    </div>
     )
   }
 }

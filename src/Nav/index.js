@@ -14,12 +14,12 @@ class Nav extends Component{
 
     return(
       <div className="navbar">
-          <div className="nav-list" id="logo"><Link to="/">SEHEE.SON.</Link></div>
-          <div className="nav-list item-list" >
-            <div className="nav-item"><Link to="/aboutme">About me.</Link></div>
-            <div className="nav-item"><Link to="/skills">Skills.</Link></div>
-            <div className="nav-item"><Link to="/projects">Projects.</Link></div>
-            <div className="nav-item"><Link to="/contact">Contact.</Link></div>
+          <div className="nav-list" id="logo"><Link style={{ textDecoration: 'none'}} to="/">SEHEE.SON.</Link></div>
+          <div className="nav-list item-list">
+            <div className="nav-item"><Link style={{ textDecoration: 'none'}} to="/aboutme">About me.</Link></div>
+            <div className="nav-item"><Link style={{ textDecoration: 'none'}} to="/skills">Skills.</Link></div>
+            <div className="nav-item"><Link style={{ textDecoration: 'none'}} to="/projects">Projects.</Link></div>
+            <div className="nav-item"><Link style={{ textDecoration: 'none'}} to="/contact">Contact.</Link></div>
           </div>
       </div>
     )

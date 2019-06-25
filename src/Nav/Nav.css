@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .item-list {
@@ -9,14 +10,19 @@
 }
 
 #logo {
-  padding: 50px;
+  margin: 50px;
+  /* padding: 10px; */
 }
 
 .nav-item {
-  padding: 50px;
-
+  padding: 10px 10px 0 10px;
+  margin: 30px 30px 50px 30px;
 }
 
 .nav-item:hover {
-  color: red;
+  border-bottom: 2px solid blue;
+}
+
+.item-list {
+  margin-right: 40px;
 }
