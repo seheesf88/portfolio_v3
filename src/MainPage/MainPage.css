@@ -1,0 +1,41 @@
+.main {
+  margin-bottom: 100px;
+}
+.top {
+  height: 300px;
+  border: 1px solid;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+p {
+  font-size: 40px;
+  text-align: right;
+  margin-right: 60px;
+}
+
+.background {
+  height: 350px;
+  width: 350px;
+  background-color: red;
+  z-index: -1;
+}
+
+.partone {
+  height: 400px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.parttwo {
+  height: 300px;
+  border: 1px solid;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.bottom {
+  height: 400px;
+  margin-right: 40px;
+  margin-left: 40px;
+}

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './Top.css';
+import './MainPage.css';
 import WOW from "wowjs";
 // import { Link } from 'react-router-dom'
 
 
-class Top extends Component{
+class MainPage extends Component{
   constructor(){
     super()
 
@@ -18,6 +18,7 @@ class Top extends Component{
 
   render(){
     return(
+    <div className="main">
       <div className="top">
         <div className="wow slideInLeft"
         data-wow-duration="2s"
@@ -25,11 +26,21 @@ class Top extends Component{
         data-wow-offset="10"
         >
           <p>Hi, I am SeHee!</p>
-          <p>I am Jr. Web developer!</p>
+          <p>I am a Jr. Web developer</p>
         </div>
+      </div>
+      <div className="partone">
+
+      </div>
+      <div className="parttwo">
+
+      </div>
+      <div className="bottom">
+
+      </div>
     </div>
     )
   }
 }
 
-export default Top
+export default MainPage

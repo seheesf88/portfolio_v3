@@ -17,7 +17,7 @@ class AboutMe extends Component{
       <div>
         <Nav />
         <h1>About Me</h1>
-
+        
       </div>
     )
   }

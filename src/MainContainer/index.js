@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Nav from '../Nav'
-import Top from '../Top'
+import MainPage from '../MainPage'
 
 
 class MainContainer extends Component{
@@ -15,7 +15,7 @@ class MainContainer extends Component{
     return(
       <div>
         <Nav />
-        <Top />
+        <MainPage />
       </div>
     )
   }
