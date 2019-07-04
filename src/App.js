@@ -6,7 +6,7 @@ import MainContainer from './MainContainer';
 import AboutMe from './AboutMe';
 import Skills from './Skills';
 import Projects from './Projects';
-import Contact from './Contact';
+import Contacts from './Contacts';
 
 const My404 = () => {
   return(
@@ -24,7 +24,7 @@ const App = () => {
         <Route exact path='/aboutme' component = { AboutMe } />
         <Route exact path='/skills' component = { Skills } />
         <Route exact path='/projects' component = { Projects } />
-        <Route exact path='/contact' component = { Contact } />
+        <Route exact path='/contact' component = { Contacts } />
       </Switch>
     </main>
   );

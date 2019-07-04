@@ -14,11 +14,24 @@
   height: 300px;
   width: 300px;
   border: 1px solid blue;
+  position: relative;
+  /* margin: 2%; */
+  overflow: hidden;
 }
 
-.frame:hover {
-  transform: scale(1.05);
+.frame:hover img {
+  /* transform: scale(1.05); */
   /* opacity: 0.2; */
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.frame img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 img {
