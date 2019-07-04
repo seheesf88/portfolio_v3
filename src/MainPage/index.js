@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './MainPage.css';
 import WOW from "wowjs";
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 class MainPage extends Component{
@@ -19,23 +19,61 @@ class MainPage extends Component{
   render(){
     return(
     <div className="main">
-      <div className="top">
+      <div className="intro">
         <div className="wow slideInLeft"
         data-wow-duration="2s"
         data-wow-iteration="1"
         data-wow-offset="10"
         >
-          <p>Hi, I am SeHee!</p>
-          <p>I am a Jr. Web developer</p>
+          <p className="intro-item">Hi, I am SeHee</p>
+          <p className="intro-item">I am Jr. Web Developer</p>
         </div>
       </div>
-      <div className="partone">
+
+      <div className="part-one">
+        <div className="wow slideInRight"
+        data-wow-duration="2s"
+        data-wow-iteration="1"
+        data-wow-offset="10"
+        >
+          <p className="part-one-item">I am an engineer</p>
+          <p className="part-one-item">dfnkdnfkndknfk</p>
+        </div>
+      </div>
+      <div className="part-two">
+
+        <div className="wow slideInLeft"
+        data-wow-duration="2s"
+        data-wow-iteration="1"
+        data-wow-offset="10"
+        >
+          <p className="part-two-item">I am an artist</p>
+          <p className="part-two-item">experienced ux/ui designer... blah</p>
+          <Link to="/projects">Check out my art</Link>
+        </div>
+
 
       </div>
-      <div className="parttwo">
+      <div className="part-three">
 
-      </div>
-      <div className="bottom">
+        <div className="wow slideInLeft"
+        data-wow-duration="2s"
+        data-wow-iteration="1"
+        data-wow-offset="10"
+        >
+          <p className="part-three-item">Keywords</p>
+          <p className="part-three-item">blah blah...</p>
+        </div>
+          <div>
+            <span>#Web development</span>
+            <span>#Passion</span>
+            <span>#Javascript</span>
+            <span>#Python</span>
+            <span>#Debugging</span>
+            <span>#Customer Service</span>
+            <span>#Hackathon</span>
+            <span>#React</span>
+          </div>
 
       </div>
     </div>

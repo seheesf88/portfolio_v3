@@ -1,14 +1,23 @@
 .main {
   margin-bottom: 100px;
 }
-.top {
-  height: 300px;
+
+.intro {
+  height: 360px;
+}
+
+.part-two {
+  height: 300px
+}
+
+.intro, .part-two {
+  /* height: 300px; */
   border: 1px solid;
   margin-right: 40px;
   margin-left: 40px;
 }
 
-p {
+.intro-item, .part-two-item  {
   font-size: 40px;
   text-align: right;
   margin-right: 60px;
@@ -21,21 +30,15 @@ p {
   z-index: -1;
 }
 
-.partone {
+.part-one, .part-three {
   height: 400px;
   margin-right: 40px;
-  margin-left: 40px;
+  /* margin-left: 0px; */
 }
 
-.parttwo {
-  height: 300px;
-  border: 1px solid;
-  margin-right: 40px;
-  margin-left: 40px;
-}
-
-.bottom {
-  height: 400px;
-  margin-right: 40px;
-  margin-left: 40px;
+.part-one-item, .part-three-item {
+  font-size: 40px;
+  text-align: left;
+  margin-right: 60px;
+  margin-left: 60px;
 }

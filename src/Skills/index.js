@@ -17,7 +17,13 @@ class Skills extends Component{
       <div>
         <Nav />
         <h1>Skills</h1>
+        <div className="skills">
+          <h3>Techincal Skills</h3>
+            <div>Language - Javascript, Python, HTML & CSS</div>
+            <div>Frameworks - React.js, </div>
+          <h3>Personal Skills</h3>
 
+        </div>
       </div>
     )
   }
