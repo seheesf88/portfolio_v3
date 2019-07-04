@@ -4,6 +4,13 @@
 
 .intro {
   height: 360px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.keywords {
+  font-size: 20px;
+  margin-top: 150px;
 }
 
 .part-two {
@@ -17,7 +24,7 @@
   margin-left: 40px;
 }
 
-.intro-item, .part-two-item  {
+.part-two-item  {
   font-size: 40px;
   text-align: right;
   margin-right: 60px;

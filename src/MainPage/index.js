@@ -20,14 +20,18 @@ class MainPage extends Component{
     return(
     <div className="main">
       <div className="intro">
-        <div className="wow slideInLeft"
-        data-wow-duration="2s"
-        data-wow-iteration="1"
-        data-wow-offset="10"
-        >
           <p className="intro-item">Hi, I am SeHee</p>
-          <p className="intro-item">I am Jr. Web Developer</p>
-        </div>
+          <p className="intro-item">I am Web Developer</p>
+          <div className="keywords">
+            <span>#Web development </span>
+            <span>#Passion </span>
+            <span>#Javascript </span>
+            <span>#Python </span>
+            <span>#Debugging </span>
+            <span>#Customer Service </span>
+            <span>#Hackathon </span>
+            <span>#React </span>
+          </div>
       </div>
 
       <div className="part-one">
@@ -61,19 +65,9 @@ class MainPage extends Component{
         data-wow-iteration="1"
         data-wow-offset="10"
         >
-          <p className="part-three-item">Keywords</p>
-          <p className="part-three-item">blah blah...</p>
+          <p className="part-three-item">I am a connector</p>
+          <p className="part-three-item">bljkdjfkdjk</p>
         </div>
-          <div>
-            <span>#Web development</span>
-            <span>#Passion</span>
-            <span>#Javascript</span>
-            <span>#Python</span>
-            <span>#Debugging</span>
-            <span>#Customer Service</span>
-            <span>#Hackathon</span>
-            <span>#React</span>
-          </div>
 
       </div>
     </div>
