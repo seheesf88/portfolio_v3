@@ -16,7 +16,7 @@ class Contacts extends Component{
     return(
       <div>
         <Nav />
-        <h1>Contacthjhj</h1>
+        <h1>Contact</h1>
         <div>Email: seheesf88@gmail.com</div>
         <div>Linkedin: <Link to=""></Link> </div>
         <div>Github: <Link to=""></Link> </div>
