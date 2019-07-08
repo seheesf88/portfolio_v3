@@ -1,13 +1,11 @@
 .container-skills {
   text-align: center;
-
 }
 
 .skill-panel {
   display: inline-grid;
   grid-template-columns: auto auto auto auto;
   /* margin-top: 100px; */
-  margin: 100px;
 }
 
 .skill-items img {
@@ -19,20 +17,30 @@
   overflow: hidden;
 }
 
-.title-tech, .title-personal {
-  text-align: left;
-  margin-left: 100px;
-  font-size: 30px;
-}
-
-.box-container {
+.skills-sets {
+  border: 1px solid red;
+  height: 400px;
+  width: 100%;
   display: flex;
-  flex-direction: auto auto;
-  align-self: center;
+  flex-direction: auto auto auto auto;
+  margin-top: 30px;
 }
 
-.box-items {
-  border: 1px solid;
-  height: 500px;
-  width: 400px;
+.skills-sets-items {
+  height: 400px;
+  width: 300px;
+  border: 1px solid blue;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.title-sub {
+  font-size: 25px;
+}
+
+ul {
+  list-style-type: none;
+  border: 1px solid green;
+  text-align: center;
+  margin-right: 30px;
 }
