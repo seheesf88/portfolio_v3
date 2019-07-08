@@ -53,7 +53,7 @@ class MainPage extends Component{
         >
           <p className="part-two-item">I am an artist</p>
           <p className="part-two-item">experienced ux/ui designer... blah</p>
-          <Link to="/projects">Check out my art</Link>
+          <Link to="/projects">Check out my artstic</Link>
         </div>
 
 
