@@ -27,7 +27,7 @@
 }
 
 .skills-sets-items {
-  height: 400px;
+  height: 300px;
   width: 300px;
   border: 1px solid blue;
   margin: auto;
@@ -38,7 +38,7 @@
   font-size: 25px;
 }
 
-ul {
+.skill-list {
   list-style-type: none;
   border: 1px solid green;
   text-align: center;

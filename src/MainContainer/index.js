@@ -17,7 +17,6 @@ class MainContainer extends Component{
       <div>
         <Nav />
         <MainPage />
-        <Footer />
       </div>
     )
   }

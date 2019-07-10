@@ -56,23 +56,40 @@ class Skills extends Component{
           <div className="skills-sets">
             <div className="skills-sets-items frameworks">
               <div className="title-sub">Frameworks & Library</div>
+              <ul className="skill-list">
+                <li>React + Redux</li>
+                <li>Flask</li>
+                <li>JQuery</li>
+                <li>Vanila.js</li>
+                <li>Express.js</li>
+                <li>Node.js</li>
+                <li></li>
+              </ul>
             </div>
             <div className="skills-sets-items databases">
               <div className="title-sub">Database</div>
+              <ul className="skill-list">
+                <li>NoSQL - MongoDB</li>
+                <li>SQL - SQLite, PostgreSQL</li>
+                <li>API</li>
+                <li>3rd party API</li>
+              </ul>
             </div>
-            <div className="skills-sets-items keywords">
-              <div className="title-sub">Keywords</div>
-                <ul>
+            <div className="skills-sets-items methodologies">
+              <div className="title-sub">Methodologies</div>
+                <ul className="skill-list">
                   <li>Debugging</li>
-                  <li></li>
+                  <li>Responsive Desigin</li>
+                  <li>RESTful architechture</li>
+                  <li>CRUD pattern</li>
                 </ul>
             </div>
             <div className="skills-sets-items personal">
               <div className="title-sub">Personal Skills</div>
-                <ul>
+                <ul className="skill-list">
                   <li>Detail-Oriented</li>
                   <li>Patient</li>
-                  <li></li>
+                  <li>Teamwork</li>
                   <li></li>
                   <li></li>
                 </ul>
