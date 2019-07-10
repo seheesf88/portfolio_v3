@@ -7,12 +7,45 @@
   height: 260px;
   font-size: 50px;
   border: 1px solid;
-  padding: 140px 40px 20px 40px;
+  padding: 140px 100px 40px 100px;
 }
 
-.title {  
+.title {
   font-weight: 200;
   /* margin: 0.4em 0; */
   /* font-size: 3.5em; */
   border: 1px solid red;
+}
+
+
+.container-summary {
+  padding: 10px 40px;
+}
+
+.summary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin: 40px 40px 20px 40px;
+  padding: 10px 50px;
+}
+
+.one {
+  margin-top: 100px;
+}
+
+.container-icon {
+  display: flex;
+  flex-direction: auto auto auto;
+  justify-content: center;
+}
+.icon {
+  height: 100px;
+  width: 100px;
+  border: 1px solid;
+  margin: 20px 40px;
+}
+
+.bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
