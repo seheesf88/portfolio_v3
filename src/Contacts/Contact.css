@@ -149,3 +149,21 @@ figure.effect-dexter:hover p {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
+
+#linkedin {
+  height: 490px;
+}
+
+#emailbg {
+  height: 450px;
+}
+
+#github {
+  height: 380px;
+  width: 105%
+}
+
+
+.linkedinfig, .githubfig {
+  color: black;
+}

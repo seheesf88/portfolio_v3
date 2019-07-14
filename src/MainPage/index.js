@@ -90,8 +90,13 @@ class MainPage extends Component{
         </div>
       </div>
       <div className="container-summary">
-        <div className="">
-          <p className="summary one">
+        <div>
+          <p className="summary one wow flipInX"
+            data-wow-duration="2s"
+            data-wow-delay="1s"
+            data-wow-offset="10"
+            data-wow-iteration="1"
+          >
             "Highly <span className="bold">analytical</span>, <span className="bold">creative</span> and <span className="bold">enthusiastic</span> web developer with a powerful blend of exceptional insights and high-level performance in building
            and optimizing the performance of user-centric, high-impact websites for start-ups and established companies."
           </p>
@@ -102,7 +107,12 @@ class MainPage extends Component{
           </div>
         </div>
         <div>
-          <p className="summary two">
+          <p className="summary two wow flipInX"
+            data-wow-duration="2s"
+            data-wow-delay="1s"
+            data-wow-offset="10"
+            data-wow-iteration="1"
+          >
             "An articulate developer with verifiable strengths to leverage technical, analytical and problem-solving skills to create dynamic, high-speed websites, apps and platforms fueling competitive
            advantage and revenue growth."
           </p>
@@ -113,7 +123,12 @@ class MainPage extends Component{
           </div>
         </div>
         <div>
-          <p className="summary three">
+          <p className="summary three wow flipInX"
+            data-wow-duration="2s"
+            data-wow-delay="1s"
+            data-wow-offset="10"
+            data-wow-iteration="1"
+          >
           "Well-equipped individual possessing an acute awareness of practical issues and trends, particularly accessibility, usability
           and emerging technologies."
           </p>
@@ -124,7 +139,12 @@ class MainPage extends Component{
           </div>
         </div>
         <div>
-          <p className="summary four">
+          <p className="summary four wow flipInX"
+            data-wow-duration="1s"
+            data-wow-delay="1s"
+            data-wow-offset="10"
+            data-wow-iteration="1"
+          >
           "Able to provide rapid, robust and client-acclaimed front- and back-end web development optimizing user experience, sales, search engine ranking,
           brand positioning and related metrics, whilst demonstrating excellent communication skills."
           </p>
