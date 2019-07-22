@@ -86,7 +86,7 @@ class MainPage extends Component{
         <span
          class="txt-rotate"
          data-period="2000"
-         data-rotate='[ "SeHee", "Web Developer.", "React Lover.", "Artist.", "Creator.", "your partner!" ]'></span>
+         data-rotate='[ "SeHee", "Web Developer.", "React Lover.", "your partner!" ]'></span>
         </div>
       </div>
       <div className="container-summary">
@@ -101,12 +101,12 @@ class MainPage extends Component{
            and optimizing the performance of user-centric, high-impact websites for start-ups and established companies."
           </p>
           <div className="container-icon">
-            <div className="icon"></div>
-            <div className="icon"></div>
-            <div className="icon"></div>
+            <div className="icon"><img src="./analytical.png" /></div>
+            <div className="icon"><img src="./creative.png" /></div>
+            <div className="icon"><img src="./passion.png" /></div>
           </div>
         </div>
-        <div>
+        <div className="secondP">
           <p className="summary two wow flipInX"
             data-wow-duration="2s"
             data-wow-delay="1s"
@@ -116,10 +116,15 @@ class MainPage extends Component{
             "An articulate developer with verifiable strengths to leverage technical, analytical and problem-solving skills to create dynamic, high-speed websites, apps and platforms fueling competitive
            advantage and revenue growth."
           </p>
+          <div className="container-icon top">
+            <div className="icont"><div className="text">technical</div></div>
+          </div>
           <div className="container-icon">
-            <div className="icon"></div>
-            <div className="icon"></div>
-            <div className="icon"></div>
+            <div className="icont"><div className="text">analytical</div></div>
+            <div className="icont"><div className="text">problem-solving</div></div>
+          </div>
+          <div className="container-icon bottom">
+            <div className="icont"><div className="text">technical</div></div>
           </div>
         </div>
         <div>
@@ -161,3 +166,28 @@ class MainPage extends Component{
 }
 
 export default MainPage
+
+
+
+// <div className="containerDia clear">
+//   <div className="boxDia">
+//     <div className="text">
+//     Your Text Here1
+//     </div>
+//   </div>
+//   <div className="boxDia">
+//     <div className="text">
+//     Your Text Here2
+//     </div>
+//   </div>
+//   <div className="boxDia">
+//     <div className="text">
+//     Your Text Here3
+//     </div>
+//   </div>
+//   <div className="boxDia">
+//     <div className="text">
+//     Your Text Here4
+//     </div>
+//   </div>
+// </div>

@@ -38,9 +38,9 @@
 }
 
 .tech-stack {
-  border: 1px solid grey;
+  border: 1px solid #dbdbd5;
   padding: 2px;
-  background-color: grey;
+  background-color: #dbdbd5;
 }
 .project-description {
   font-size: 16px;

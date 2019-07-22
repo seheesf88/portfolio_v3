@@ -4,7 +4,7 @@
 }
 
 .intro {
-  height: 260px;
+  height: 240px;
   font-size: 50px;
   border: 1px solid;
   padding: 140px 100px 40px 100px;
@@ -37,14 +37,22 @@
   display: flex;
   flex-direction: auto auto auto;
   justify-content: center;
+  margin-top: 50px;
 }
 .icon {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   /* border: 1px solid; */
   margin: 20px 40px;
+  /* align-items: center;
+  justify-content: center; */
 }
 
+.icon img {
+  height: 100px;
+  margin-top: 5px;
+  margin-left: 7px;
+}
 .bold {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -55,3 +63,89 @@
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
   box-shadow:         3px 3px 5px 6px #ccc;
 }
+
+
+.secondP {
+  margin-top: 100px;
+  /* display: inline; */
+}
+
+.top {
+  margin-bottom: -97px;
+}
+
+.icont {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border: 2px solid black;
+  height: 150px;
+  width: 150px;
+  margin-right: 60px
+}
+
+.bottom {
+  margin-top: -46px;
+  margin-bottom: 60px;
+}
+
+/* .containerDia {
+  width: 100%;
+  height: 200px;
+  margin: 10px auto;
+  border: 2px solid red;
+}
+
+.boxDia {
+  height: 100px;
+  width: 100px;
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 4px solid black;
+  background: transparent;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */
+
+.text {
+  width: 200px;
+  height: 200px;
+  padding-top: 60px;
+  padding-left: 25px;
+  /* display: table-cell; */
+  vertical-align: middle;
+  color: red;
+  text-align: center;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 18px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* .containerDia > div:nth-child(7n+5) {
+  margin-left: 186px;
+}
+.containerDia > div:nth-child(n+3) {
+  margin-top: -64px;
+}
+
+.clear::after {
+  content: '';
+  display: table;
+  clear: both;
+} */
