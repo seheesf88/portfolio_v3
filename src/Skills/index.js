@@ -62,7 +62,7 @@ class Skills extends Component{
               <li>Vanila.js</li>
               <li>Node.js</li>
               <li>Express.js</li>
-              <li></li>
+              <li>Bootstrap</li>
             </ul>
           </div>
           <div className="skills-sets-items databases">
@@ -94,7 +94,7 @@ class Skills extends Component{
                 <li>Detail-Oriented</li>
                 <li>Problem-Solving</li>
                 <li>Teamwork</li>
-                <li>Strong communication</li>
+                <li>Strong Communication</li>
                 <li>Customer Service</li>
               </ul>
           </div>

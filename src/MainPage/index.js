@@ -113,18 +113,13 @@ class MainPage extends Component{
             data-wow-offset="10"
             data-wow-iteration="1"
           >
-            "An articulate developer with verifiable strengths to leverage technical, analytical and problem-solving skills to create dynamic, high-speed websites, apps and platforms fueling competitive
+            "An <span className="bold">articulate developer</span> with verifiable strengths to leverage technical, analytical and problem-solving skills to create dynamic, high-speed websites, apps and platforms fueling competitive
            advantage and revenue growth."
           </p>
-          <div className="container-icon top">
-            <div className="icont"><div className="text">technical</div></div>
-          </div>
           <div className="container-icon">
-            <div className="icont"><div className="text">analytical</div></div>
-            <div className="icont"><div className="text">problem-solving</div></div>
-          </div>
-          <div className="container-icon bottom">
-            <div className="icont"><div className="text">technical</div></div>
+            <div className="icon"></div>
+            <div className="icon"></div>
+            <div className="icon"></div>
           </div>
         </div>
         <div>
@@ -137,10 +132,15 @@ class MainPage extends Component{
           "Well-equipped individual possessing an acute awareness of practical issues and trends, particularly accessibility, usability
           and emerging technologies."
           </p>
+          <div className="container-icon top">
+            <div className="icont"><div className="text">accessibility</div></div>
+          </div>
           <div className="container-icon">
-            <div className="icon"></div>
-            <div className="icon"></div>
-            <div className="icon"></div>
+            <div className="icont"><div className="text">usability</div></div>
+            <div className="icont"><div className="text">emerging</div></div>
+          </div>
+          <div className="container-icon bottom">
+            <div className="icont"><div className="text">technologies</div></div>
           </div>
         </div>
         <div>
@@ -153,10 +153,9 @@ class MainPage extends Component{
           "Able to provide rapid, robust and client-acclaimed front- and back-end web development optimizing user experience, sales, search engine ranking,
           brand positioning and related metrics, whilst demonstrating excellent communication skills."
           </p>
-          <div className="container-icon">
-            <div className="icon"></div>
-            <div className="icon"></div>
-            <div className="icon"></div>
+          <div className="">
+            <div className="pictureOne"></div>
+            <div className="PictureTwo"></div>
           </div>
         </div>
       </div>
@@ -168,26 +167,4 @@ class MainPage extends Component{
 export default MainPage
 
 
-
-// <div className="containerDia clear">
-//   <div className="boxDia">
-//     <div className="text">
-//     Your Text Here1
-//     </div>
-//   </div>
-//   <div className="boxDia">
-//     <div className="text">
-//     Your Text Here2
-//     </div>
-//   </div>
-//   <div className="boxDia">
-//     <div className="text">
-//     Your Text Here3
-//     </div>
-//   </div>
-//   <div className="boxDia">
-//     <div className="text">
-//     Your Text Here4
-//     </div>
-//   </div>
-// </div>
+// <div className="icont"><div className="img"><img id="app" src="./data.png" /></div></div>
