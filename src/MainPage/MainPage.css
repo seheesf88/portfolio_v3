@@ -1,8 +1,10 @@
+/* "*" */
 .main {
   margin-bottom: 100px;
   padding: 40px;
 }
 
+/* intro */
 .intro {
   height: 240px;
   font-size: 50px;
@@ -17,9 +19,14 @@
   /* border: 1px solid red; */
 }
 
-
+/* "body" */
 .container-summary {
   padding: 10px 40px;
+}
+
+/* Frist Section */
+
+.firstP {
 }
 
 .summary {
@@ -39,6 +46,7 @@
   justify-content: center;
   margin-top: 50px;
 }
+
 .icon {
   height: 120px;
   width: 120px;
@@ -64,10 +72,101 @@
   box-shadow:         3px 3px 5px 6px #ccc;
 }
 
+.icons {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Second section*/
 
 .secondP {
-  margin-top: 100px;
+  margin-top: 140px;
   /* display: inline; */
+  height: 450px;
+}
+
+.two {
+  padding-bottom: 60px;
+}
+
+
+@keyframes rot {
+	from {
+		transform: rotate(0deg)
+		           translate(-130px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-130px)
+		           rotate(-360deg);
+	}
+}
+
+.smile-0 {
+	width: 40px;
+	height: 40px;
+	/* position: absolute; */
+	top: 200px;
+	left: 50%;
+	margin: -20px;
+	/* font-size: 30px; */
+	animation: rot 9s infinite linear;
+}
+
+.smile-1 {
+  width: 40px;
+  height: 40px;
+  /* position: absolute; */
+  top: 200px;
+  left: 50%;
+  margin: -20px;
+  /* font-size: 30px; */
+  animation: rot 6s infinite linear;
+}
+
+.smile-2 {
+  width: 40px;
+  height: 40px;
+  /* position: absolute; */
+  top: 200px;
+  left: 50%;
+  margin: -20px;
+  /* font-size: 30px; */
+  animation: rot 8s infinite linear;
+}
+
+.smile-3 {
+  width: 40px;
+  height: 40px;
+  /* position: absolute; */
+  top: 200px;
+  left: 50%;
+  margin: -20px;
+  /* font-size: 30px; */
+  animation: rot 10s infinite linear;
+}
+
+.strengths {
+  margin-top: 130px;
+}
+
+#platforms {
+  height: 80px;
+  width: 80px;
+  margin-left: -30px;
+  margin-top: -40px;
+}
+
+#speed {
+  height: 50px;
+  width: 50px;
+}
+
+
+/* Third section */
+.thridP {
+
 }
 
 .top {
@@ -138,6 +237,52 @@
 }
 
 
+.flip-card {
+  background-color: transparent;
+  /* width: 300px; */
+  /* height: 200px; */
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  /* position: relative; */
+  /* width: 100%; */
+  /* height: 100%; */
+  text-align: center;
+  transition: transform 0.8s;
+  /* transform-style: preserve-3d; */
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  /* width: 100%; */
+  /* height: 100%; */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+/* .flip-card-front {
+  background-color: #bbb;
+  color: black;
+} */
+
+/* Style the back side */
+.flip-card-back {
+  /* background-color: dodgerblue; */
+  /* color: white; */
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  padding-top: 0px;
+}
+
 /* .pictureOne {
   border: 1px solid;
   width: 60px;
@@ -151,3 +296,143 @@
   vertical-align: middle;
 
 } */
+
+
+/* .triangles {
+  display: flex;
+}
+
+.pictureOne {
+    width: 0;
+    height: 0;
+    border-bottom: 250px solid red;
+    border-right: 500px solid transparent;
+    margin-left: 250px;
+    background-image: url('https://www.thesprucepets.com/thmb/5Z5WAqlqp0um9gWQ4KmFwlpfmbA=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/twenty20_e47b3798-dd9b-40b1-91ef-1d820337966e-5aa3f798642dca00363b0df1.jpg')
+}
+
+.pictureTwo {
+  width: 0;
+  height: 0;
+  border-top: 250px solid;
+  border-left: 500px solid transparent;
+  margin-left: -500px;
+  background-color: yellow;
+} */
+
+/* body { background: gainsboro; } */
+
+.pageOption {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  /* width: 28em;*/
+  /* height: 20em; */
+  width: 300px;
+  height: 200px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.option, .option img { width: 100%; height: 100%; }
+.option {
+  overflow: hidden;
+  position: absolute;
+  /* arctan(27 / 40) = 34.01935deg
+   * need to skew by 90deg - 34.01935deg = 55.98065deg
+  */
+  transform: skewX(-55.98deg);
+}
+.option:first-child {
+  left: -.25em;
+  transform-origin: 100% 0;
+  width: 900px;
+}
+.option:last-child {
+  right: -.25em;
+  transform-origin: 0 100%;
+  width: 300px;
+}
+.option img { opacity: .75; transition: .5s; }
+.option img:hover { opacity: 1; }
+.option img, .option:after {
+  transform: skewX(55.98deg);
+  transform-origin: inherit;
+}
+.option:after {
+  position: absolute;
+  margin: .5em 1.65em;
+  color: white;
+  font: 500 1.25em Courier;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  content: attr(data-inf);
+}
+.option:first-child:after { top: 0; left: 0; }
+.option:last-child:after { right: 0; bottom: 0; }
+
+.me {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+}
+
+.saving {
+  font-size: 50px;
+  color: yellow;
+  padding-top: 48px;
+}
+@keyframes blink {
+
+    0% {
+      opacity: .2;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: .2;
+    }
+}
+
+.saving span {
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.saving span:nth-child(1) {
+    animation-delay: .1s;
+}
+.saving span:nth-child(2) {
+    animation-delay: .2s;
+}
+.saving span:nth-child(3) {
+    animation-delay: .4s;
+}
+.saving span:nth-child(4) {
+    animation-delay: .6s;
+}
+.saving span:nth-child(5) {
+    animation-delay: .8s;
+}
+.saving span:nth-child(6) {
+    animation-delay: .10s;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+
+.icon-3 {
+  height: 100px;
+  width: 100px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 20px;
+}

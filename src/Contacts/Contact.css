@@ -1,169 +1,69 @@
-.grid {
-    position: relative;
-    margin: 0 auto;
-    padding: 1em 0 4em;
-    max-width: 1000px;
-    list-style: none;
-    text-align: center;
+
+.contact-main {
+  margin-bottom: 100px;
 }
 
-/* Common style */
-.grid figure {
-    position: relative;
-    float: left;
-    overflow: hidden;
-    margin: 10px 1%;
-    min-width: 320px;
-    max-width: 480px;
-    max-height: 360px;
-    width: 48%;
-    background: #3085a3;
-    text-align: center;
-    cursor: pointer;
+.contact-container {
+  /* border: solid 1px black; */
+  width: 70%;
+  height: 400px;
+  margin-top: 70px;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: row;
 }
 
-.grid figure img {
-    position: relative;
-    display: block;
-    min-height: 100%;
-    max-width: 100%;
-    opacity: 0.8;
+.avatar {
+  width: 45%;
+  padding: 20px;
 }
 
-.grid figure figcaption {
-    padding: 2em;
-    color: #fff;
-    /* text-transform: uppercase; */
-    font-size: 1.25em;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+.avatar-discription {
+  width: 100%;
+  padding: 20px;
 }
 
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-    pointer-events: none;
+#avatar {
+  /* height: 350px;
+  width: 380px; */
+  height: 100%;
+  width: 120%
 }
 
-.grid figure figcaption,
-.grid figure figcaption > a {
-    position: absolute;
-    top: 10px;
-    left: 4px;
-    width: 75%;
-    height: 70%;
+.contact {
+  height: 30px;
+  width: 30px;
+}
+.contact-intro {
+
+  text-align: center;
+}
+.contact-info {
+
+  margin-top: 30px;
+  text-align: center;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.grid figure figcaption > a {
-    z-index: 1000;
-    /* text-indent: 200%; */
-    text-indent: 100%;
-    white-space: nowrap;
-    font-size: 0;
-    opacity: 0;
+#contact-name {
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 25px;
 }
 
-.grid figure h2 {
-    word-spacing: -0.15em;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-.grid figure h2 span {
-    font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-    margin: 0;
-}
-
-.grid figure p {
-    letter-spacing: 1px;
-    /* font-size: 68.5%; */
-    font-size: 30px;
-}
-
-.link {
-    color: white;
-}
-
-.shortUrl {
+.contact-address {
   font-size: 20px;
+  font-family: Playfair Display;
+  /* padding-top: 5px; */
+  padding-bottom: 5px;
 }
 
-figure.effect-dexter {
-    background: -webkit-linear-gradient(top, rgba(37,141,200,1) 0%, rgba(104,60,19,1) 100%);
-    background: linear-gradient(to bottom, rgba(37,141,200,1) 0%,rgba(104,60,19,1) 100%);
-}
-
-figure.effect-dexter img {
-    -webkit-transition: opacity 0.35s;
-    transition: opacity 0.35s;
-}
-
-figure.effect-dexter:hover img {
-    opacity: 0.4;
-}
-
-figure.effect-dexter figcaption::after {
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
-    left: 30px;
-    height: -webkit-calc(50% - 30px);
-    height: calc(50% - 30px);
-    border: 7px solid #fff;
-    content: '';
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate3d(0,-100%,0);
-    transform: translate3d(0,-100%,0);
-}
-
-figure.effect-dexter:hover figcaption::after {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-
-figure.effect-dexter figcaption {
-    padding: 3em;
-    text-align: left;
-}
-
-figure.effect-dexter p {
-    position: absolute;
-    right: 60px;
-    bottom: 60px;
-    left: 60px;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0,-100px,0);
-    transform: translate3d(0,-100px,0);
-}
-
-figure.effect-dexter:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-
-#linkedin {
-  height: 490px;
-}
-
-#emailbg {
-  height: 450px;
-}
-
-#github {
-  height: 380px;
-  width: 105%
-}
-
-
-.linkedinfig, .githubfig {
-  color: black;
+.contact-link {
+  border-radius: 50%;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-box-shadow:0px 10px 6px -6px #777;
+  -moz-box-shadow:0px 10px 6px -6px #777;
+  box-shadow:0px 10px 6px -6px #777;
 }
