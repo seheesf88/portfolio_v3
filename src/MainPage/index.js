@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './MainPage.css';
 import WOW from "wowjs";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import BackgroundImage from "react-background-image";
+import bgImage from "./main.jpg"
 
 
 class MainPage extends Component{
@@ -76,19 +78,20 @@ class MainPage extends Component{
     };
 
 
-
     return(
     <div className="main">
-      <div className="intro">
-        <div>Hi, </div>
-        <div className="title">I am
-        <span> </span>
-        <span
-         class="txt-rotate"
-         data-period="2000"
-         data-rotate='[ "SeHee", "Web Developer.", "React Lover.", "your partner!" ]'></span>
+
+        <div className="intro">
+          <div>Hi, </div>
+          <div className="title">I am
+            <span> </span>
+            <span
+             className="txt-rotate"
+             data-period="2000"
+             data-rotate='[ "SeHee", "Web Developer.", "React Lover.", "your partner!" ]'></span>
+          </div>
         </div>
-      </div>
+
       <div className="container-summary">
         <div className="firstP">
           <p className="summary one wow flipInX"
@@ -117,10 +120,10 @@ class MainPage extends Component{
            advantage and revenue growth."
           </p>
           <div className="container-icon strengths">
-            <div className="benefit smile-0">dynamic</div>
+            <div className="benefit smile-0"><img id="speed" src="./innovation.png" /></div>
             <div className="benefit smile-1"><img id="speed" src="./speed.png" /></div>
-            <div className="benefit smile-2">fueling competitive</div>
-            <div className="benefit smile-3">revenue growth</div>
+            <div className="benefit smile-2"><img id="growth" src="./growth.png" /></div>
+            <div className="benefit smile-3"><img id="maintenance" src="./maintenance.png" /></div>
             <div className=""><img id="platforms" src="./platform.png" /></div>
           </div>
         </div>
@@ -131,23 +134,34 @@ class MainPage extends Component{
             data-wow-offset="10"
             data-wow-iteration="1"
           >
-          "Well-equipped individual possessing an acute awareness of practical issues and trends, particularly accessibility, usability
+          "Well-equipped individual <span className="bold">possessing</span> an acute awareness of practical issues and trends, particularly accessibility, usability
           and emerging technologies."
           </p>
           <div className="container-icon top">
-            <div className="flip-card">
-              <div className="icont flip-card-inner">
-                <div className="text flip-card-front">accessibility</div>
-                <div className="text flip-card-back">testingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtesting</div>
+            <div className="diamond flip-card-inner">
+              <div className="text flip-card-front">
+                <div>usability</div>
+                <div><img className="possessing" src="./usability.png"/></div>
               </div>
             </div>
           </div>
           <div className="container-icon">
-            <div className="icont"><div className="text">usability</div></div>
-            <div className="icont"><div className="text">emerging</div></div>
+            <div className="diamond">
+                <div className="text">
+                  <div>accessibility</div>
+                  <div><img className="possessing" src="./key.png" /></div>
+                </div>
+            </div>
+            <div className="diamond">
+              <div className="text">emerging</div></div>
           </div>
-          <div className="container-icon bottom">
-            <div className="icont"><div className="text">technologies</div></div>
+          <div className="flip-card">
+            <div className="container-icon bottom">
+              <div className="diamond flip-card-inner" id="diamond-technologies">
+                <div className="text flip-card-front">technologies</div>
+                <div className="text flip-card-back"></div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="fourP">
@@ -169,7 +183,7 @@ class MainPage extends Component{
               <span>•   </span>
               <span>•   </span>
             </div>
-            <div className="icon"></div>
+            <div id="center"></div>
             <div className="saving">
               <span>•   </span>
               <span>•   </span>
@@ -199,3 +213,20 @@ export default MainPage
 //     <img src='http://imgsrc.hubblesite.org/hu/db/images/hs-2013-06-a-large_web.jpg' />
 //   </a>
 // </div>
+
+//
+// <BackgroundImage
+//   className="background"
+//   src={bgImage}
+// >
+//   <div className="intro">
+//     <div>Hi, </div>
+//     <div className="title">I am
+//       <span> </span>
+//       <span
+//        className="txt-rotate"
+//        data-period="2000"
+//        data-rotate='[ "SeHee", "Web Developer.", "React Lover.", "your partner!" ]'></span>
+//     </div>
+//   </div>
+// </BackgroundImage>
