@@ -23,7 +23,7 @@ class Skills extends Component{
     return(
       <div>
         <Nav />
-        <h1>Skills</h1>
+        <h1>Skills.</h1>
         <div className="container-skills">
           <div className="skill-panel">
             <div className="skill-items wow slideInLeft"

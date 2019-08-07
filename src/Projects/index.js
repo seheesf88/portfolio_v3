@@ -22,7 +22,7 @@ class Projects extends Component{
       <div>
         <Nav />
         <div className="project-container">
-        <h1 id="project">Projects</h1>
+        <h1 id="project">Projects.</h1>
         <div className="project-one">
           <div className="panel">
             <div className="wow slideInRight project-items"

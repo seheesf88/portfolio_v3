@@ -96,7 +96,7 @@ class MainPage extends Component{
         <div className="firstP">
           <p className="summary one wow flipInX"
             data-wow-duration="3s"
-            data-wow-delay="1s"
+            data-wow-delay="0s"
             data-wow-offset="10"
             data-wow-iteration="1"
           >
@@ -112,7 +112,7 @@ class MainPage extends Component{
         <div className="secondP">
           <p className="summary two wow flipInX"
             data-wow-duration="3s"
-            data-wow-delay="1s"
+            data-wow-delay="0s"
             data-wow-offset="10"
             data-wow-iteration="1"
           >
@@ -130,7 +130,7 @@ class MainPage extends Component{
         <div className="thridP">
           <p className="summary three wow flipInX"
             data-wow-duration="3s"
-            data-wow-delay="1s"
+            data-wow-delay="0s"
             data-wow-offset="10"
             data-wow-iteration="1"
           >
@@ -153,13 +153,24 @@ class MainPage extends Component{
                 </div>
             </div>
             <div className="diamond">
-              <div className="text">emerging</div></div>
+              <div className="text">
+                <div>emerging</div>
+                <div><img className="possessing" src="./new.png" /></div>
+              </div>
+            </div>
           </div>
           <div className="flip-card">
-            <div className="container-icon bottom">
-              <div className="diamond flip-card-inner" id="diamond-technologies">
-                <div className="text flip-card-front">technologies</div>
-                <div className="text flip-card-back"></div>
+            <div className="container-icon bottom wow slideInUp"                     data-wow-duration="1s"
+                                data-wow-delay="1s"
+                                data-wow-offset="10"
+                                data-wow-iteration="1"
+                                data-wow-duration="2s"
+                                >
+              <div className="diamond" id="diamond-technologies">
+                <div className="text">
+                  <div>technologies</div>
+                  <div><img className="possessing chip" src="./chip.png" /></div>
+                </div>
               </div>
             </div>
           </div>
@@ -167,7 +178,7 @@ class MainPage extends Component{
         <div className="fourP">
           <p className="summary four wow flipInX"
             data-wow-duration="1s"
-            data-wow-delay="1s"
+            data-wow-delay="0s"
             data-wow-offset="10"
             data-wow-iteration="1"
           >

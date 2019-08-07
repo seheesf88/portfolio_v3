@@ -16,8 +16,7 @@ class Nav extends Component{
       <div className="navbar">
           <div className="nav-list" id="logo">
             <Link style={{ textDecoration: 'none'}} to="/">
-              <div>SEHEE</div>
-              <div>SON<span className="dot">.</span></div>
+              <img src="./logo.png"/>
             </Link>
           </div>
           <div className="nav-list item-list">
@@ -34,3 +33,6 @@ export default Nav
 
 
 // <div className="nav-item"><Link style={{ textDecoration: 'none'}} to="/aboutme">About me.</Link></div>
+
+// <div>SEHEE</div>
+// <div>SON<span className="dot">.</span></div>

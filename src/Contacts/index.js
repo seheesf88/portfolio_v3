@@ -16,7 +16,7 @@ class Contacts extends Component{
     return(
       <div className="contact-main">
         <Nav />
-        <h1>Contact</h1>
+        <h1>Contact.</h1>
         <div className="contact-container">
           <div className="avatar">
             <img id="avatar" src="./connect.jpg" />
@@ -26,8 +26,7 @@ class Contacts extends Component{
               <div id="contact-name">SeHee Son</div>
               <div className="contact-address">San Francisco, CA</div>
               <div className="contact-address">seheesf88@gmail.com</div>
-              <div className="contact-address">linkedin.com/in/sehee-son</div>
-              <div className="contact-address">github.com/seheesf88</div>
+              <div className="contact-address" id="findmeon">Find me on..</div>
             </div>
             <div className="contact-info">
               <span className="contact-link"><a href="mailto:seheesf88@gmail.com"><img className="contact" src="./email.png" /></a></span>
