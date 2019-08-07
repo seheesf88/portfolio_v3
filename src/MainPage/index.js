@@ -182,8 +182,8 @@ class MainPage extends Component{
             data-wow-offset="10"
             data-wow-iteration="1"
           >
-          "Able to provide rapid, robust and client-acclaimed <span className="bold">front-end</span> and <span className="bold">back-end</span> web development optimizing user experience, sales, search engine ranking,
-          brand positioning and related metrics, whilst demonstrating excellent communication skills."
+          "Able to provide rapid, robust and client-acclaimed front-end and back-end web development <span className="bold">optimizing user experience,</span> sales, search engine ranking,
+          brand positioning and related metrics, whilst demonstrating excellent <span className="bold">communication skills.</span>"
           </p>
           <div className="container-icon">
             <img className="icon-3" src="./back.png" />
