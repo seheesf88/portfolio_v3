@@ -58,12 +58,12 @@ class Skills extends Component{
             <div className="skills-sets-items frameworks">
               <div className="title-sub line">Frameworks & Library</div>
               <ul className="skill-list">
-                <li>React.js + Redux</li>
-                <li>Node.js</li>
-                <li>Flask</li>
-                <li>JQuery / Vanila.js</li>
-                <li>Express.js</li>
-                <li>Bootstrap</li>
+                <li><img className="bullet" src="./bullet.png" />React.js + Redux</li>
+                <li><img className="bullet" src="./bullet.png" />Node.js</li>
+                <li><img className="bullet" src="./bullet.png" />Flask</li>
+                <li><img className="bullet" src="./bullet.png" />JQuery / Vanila.js</li>
+                <li><img className="bullet" src="./bullet.png" />Express.js</li>
+                <li><img className="bullet" src="./bullet.png" />Bootstrap</li>
               </ul>
             </div>
           </div>
@@ -72,12 +72,12 @@ class Skills extends Component{
               <div className="skills-sets-items databases">
                 <div className="title-sub oneline">Database</div>
                 <ul className="skill-list">
-                  <li>NoSQL</li>
+                  <li><img className="bullet" src="./bullet.png" />NoSQL</li>
                   <li className="space">- MongoDB</li>
-                  <li>SQL - SQLite, </li>
+                  <li><img className="bullet" src="./bullet.png" />SQL - SQLite, </li>
                   <li className="space">- PostgreSQL</li>
-                  <li>Firebase</li>
-                  <li>MongoDB atlas</li>
+                  <li><img className="bullet" src="./bullet.png" />Firebase</li>
+                  <li><img className="bullet" src="./bullet.png" />MongoDB atlas</li>
                 </ul>
               </div>
           </div>
@@ -86,13 +86,13 @@ class Skills extends Component{
               <div className="skills-sets-items methodologies">
                 <div className="title-sub line">Methodologies & Others</div>
                 <ul className="skill-list">
-                  <li>RESTful architechture</li>
-                  <li>CRUD pattern</li>
-                  <li>MVC pattern</li>
-                  <li>Responsive Desigin</li>
-                  <li>UX/UI</li>
-                  <li>Debugging</li>
-                  <li>Troulbleshooting</li>
+                  <li><img className="bullet" src="./bullet.png" />RESTful architechture</li>
+                  <li><img className="bullet" src="./bullet.png" />CRUD pattern</li>
+                  <li><img className="bullet" src="./bullet.png" />MVC pattern</li>
+                  <li><img className="bullet" src="./bullet.png" />Responsive Desigin</li>
+                  <li><img className="bullet" src="./bullet.png" />UX/UI</li>
+                  <li><img className="bullet" src="./bullet.png" />Debugging / Testing</li>
+                  <li><img className="bullet" src="./bullet.png" />Troulbleshooting</li>
                 </ul>
             </div>
           </div>
@@ -101,11 +101,11 @@ class Skills extends Component{
               <div className="skills-sets-items personal">
                 <div className="title-sub oneline">Personal Skills</div>
                 <ul className="skill-list">
-                  <li>Detail-Oriented</li>
-                  <li>Problem-Solving</li>
-                  <li>Teamwork</li>
-                  <li>Communication</li>
-                  <li>Customer Service</li>
+                  <li><img className="bullet" src="./bullet.png" />Detail-Oriented</li>
+                  <li><img className="bullet" src="./bullet.png" />Problem-Solving</li>
+                  <li><img className="bullet" src="./bullet.png" />Teamwork</li>
+                  <li><img className="bullet" src="./bullet.png" />Communication</li>
+                  <li><img className="bullet" src="./bullet.png" />Customer Service</li>
                 </ul>
               </div>
             </div>
