@@ -53,51 +53,65 @@ class Skills extends Component{
           </div>
         </div>
         <div className="skills-sets">
-          <div className="skills-sets-items frameworks">
-            <div className="title-sub">Frameworks & Library</div>
-            <ul className="skill-list">
-              <li>React.js + Redux</li>
-              <li>Flask</li>
-              <li>JQuery</li>
-              <li>Vanila.js</li>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>Bootstrap</li>
-            </ul>
+          <div className="skillbox">
+            <div className="title-img"><img className="skill-img" src="./book.png" /></div>
+            <div className="skills-sets-items frameworks">
+              <div className="title-sub line">Frameworks & Library</div>
+              <ul className="skill-list">
+                <li>React.js + Redux</li>
+                <li>Node.js</li>
+                <li>Flask</li>
+                <li>JQuery / Vanila.js</li>
+                <li>Express.js</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
           </div>
-          <div className="skills-sets-items databases">
-            <div className="title-sub">Database</div>
-            <ul className="skill-list">
-              <li>NoSQL - MongoDB</li>
-              <li>SQL - SQLite, PostgreSQL</li>
-              <li>Firebase</li>
-              <li>MongoDB atlas</li>
-            </ul>
+          <div className="skillbox">
+            <div className="title-img"><img className="skill-img" src="./database.png" /></div>
+              <div className="skills-sets-items databases">
+                <div className="title-sub oneline">Database</div>
+                <ul className="skill-list">
+                  <li>NoSQL</li>
+                  <li className="space">- MongoDB</li>
+                  <li>SQL - SQLite, </li>
+                  <li className="space">- PostgreSQL</li>
+                  <li>Firebase</li>
+                  <li>MongoDB atlas</li>
+                </ul>
+              </div>
           </div>
+          <div className="skillbox">
+            <div className="title-img"><img className="skill-img" src="./idea.png" /></div>
+              <div className="skills-sets-items methodologies">
+                <div className="title-sub line">Methodologies & Others</div>
+                <ul className="skill-list">
+                  <li>RESTful architechture</li>
+                  <li>CRUD pattern</li>
+                  <li>MVC pattern</li>
+                  <li>Responsive Desigin</li>
+                  <li>UX/UI</li>
+                  <li>Debugging</li>
+                  <li>Troulbleshooting</li>
+                </ul>
+            </div>
+          </div>
+          <div className="skillbox">
+            <div className="title-img"><img className="skill-img" src="./skill.png" /></div>
+              <div className="skills-sets-items personal">
+                <div className="title-sub oneline">Personal Skills</div>
+                <ul className="skill-list">
+                  <li>Detail-Oriented</li>
+                  <li>Problem-Solving</li>
+                  <li>Teamwork</li>
+                  <li>Communication</li>
+                  <li>Customer Service</li>
+                </ul>
+              </div>
+            </div>
         </div>
 
         <div className="skills-sets">
-          <div className="skills-sets-items methodologies">
-            <div className="title-sub">Methodologies & Others</div>
-              <ul className="skill-list">
-                <li>RESTful architechture</li>
-                <li>CRUD pattern</li>
-                <li>MVC pattern</li>
-                <li>Responsive Desigin</li>
-                <li>Debugging</li>
-                <li>Troulbleshooting</li>
-              </ul>
-          </div>
-          <div className="skills-sets-items personal">
-            <div className="title-sub">Personal Skills</div>
-              <ul className="skill-list">
-                <li>Detail-Oriented</li>
-                <li>Problem-Solving</li>
-                <li>Teamwork</li>
-                <li>Strong Communication</li>
-                <li>Customer Service</li>
-              </ul>
-          </div>
         </div>
     </div>
     )
@@ -105,3 +119,58 @@ class Skills extends Component{
 }
 
 export default Skills
+
+//
+// <div className="skills-sets">
+//   <div className="skills-sets-items frameworks">
+//     <div className="title-sub">Frameworks & Library</div>
+//     <ul className="skill-list">
+//       <li>React.js + Redux</li>
+//       <li>Flask</li>
+//       <li>JQuery</li>
+//       <li>Vanila.js</li>
+//       <li>Node.js</li>
+//       <li>Express.js</li>
+//       <li>Bootstrap</li>
+//     </ul>
+//   </div>
+//   <div className="skills-sets-items databases">
+//     <div className="title-sub">Database</div>
+//     <ul className="skill-list">
+//       <li>NoSQL - MongoDB</li>
+//       <li>SQL - SQLite, PostgreSQL</li>
+//       <li>Firebase</li>
+//       <li>MongoDB atlas</li>
+//     </ul>
+//   </div>
+// </div>
+//
+// <div className="skills-sets">
+//   <div className="skills-sets-items methodologies">
+//     <div className="title-sub">Methodologies & Others</div>
+//       <ul className="skill-list">
+//         <li>RESTful architechture</li>
+//         <li>CRUD pattern</li>
+//         <li>MVC pattern</li>
+//         <li>Responsive Desigin</li>
+//         <li>Debugging</li>
+//         <li>Troulbleshooting</li>
+//       </ul>
+//   </div>
+//   <div className="skills-sets-items personal">
+//     <div className="title-sub">Personal Skills</div>
+//       <ul className="skill-list">
+//         <li>Detail-Oriented</li>
+//         <li>Problem-Solving</li>
+//         <li>Teamwork</li>
+//         <li>Strong Communication</li>
+//         <li>Customer Service</li>
+//       </ul>
+//   </div>
+// </div>
+// </div>
+// )
+// }
+// }
+//
+// export default Skills

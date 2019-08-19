@@ -20,9 +20,9 @@ class Nav extends Component{
             </Link>
           </div>
           <div className="nav-list item-list">
-            <div className="nav-item"><Link style={{ textDecoration: 'none'}} to="/projects">Projects.</Link></div>
-            <div className="nav-item"><Link style={{ textDecoration: 'none'}} to="/skills">Skills.</Link></div>
-            <div className="nav-item"><Link style={{ textDecoration: 'none'}} to="/contact">Contact.</Link></div>
+            <div className="nav-item"><Link className="link" style={{ textDecoration: 'none'}} to="/projects">Projects.</Link></div>
+            <div className="nav-item"><Link className="link" style={{ textDecoration: 'none'}} to="/skills">Skills.</Link></div>
+            <div className="nav-item"><Link className="link" style={{ textDecoration: 'none'}} to="/contact">Contact.</Link></div>
           </div>
       </div>
     )

@@ -82,14 +82,20 @@ class MainPage extends Component{
     <div className="main">
 
         <div className="intro">
-          <div>Hi, </div>
+          <div className="hi">Hi, </div>
           <div className="title">I am
             <span> </span>
             <span
              className="txt-rotate"
              data-period="2000"
-             data-rotate='[ "SeHee", "Web Developer.", "React Lover.", "your partner!" ]'></span>
+             data-rotate='[ "SeHee", "a Web Developer.", "React Lover.", "your partner!" ]'></span>
           </div>
+        </div>
+
+        <div className="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
       <div className="container-summary">
@@ -116,7 +122,7 @@ class MainPage extends Component{
             data-wow-offset="10"
             data-wow-iteration="1"
           >
-            "An <span className="bold">articulate developer</span> with verifiable strengths to leverage technical, analytical and problem-solving skills to create dynamic, high-speed websites, apps and platforms fueling competitive
+            "An articulate developer with <span className="bold">verifiable</span> strengths to leverage technical, analytical and problem-solving skills to create <span className="bold">dynamic, high-speed</span> websites, apps and platforms fueling competitive
            advantage and revenue growth."
           </p>
           <div className="container-icon strengths">
@@ -134,7 +140,7 @@ class MainPage extends Component{
             data-wow-offset="10"
             data-wow-iteration="1"
           >
-          "Well-equipped individual <span className="bold">possessing</span> an acute awareness of practical issues and trends, particularly accessibility, usability
+          "<span className="bold">Well-equipped</span> individual <span className="bold">possessing</span> an acute awareness of practical issues and trends, particularly accessibility, usability
           and emerging technologies."
           </p>
           <div className="container-icon top">
@@ -182,7 +188,7 @@ class MainPage extends Component{
             data-wow-offset="10"
             data-wow-iteration="1"
           >
-          "Able to provide rapid, robust and client-acclaimed front-end and back-end web development <span className="bold">optimizing user experience,</span> sales, search engine ranking,
+          "Able to provide rapid, robust and client-acclaimed front-end and back-end web development <span className="bold">optimizing</span> user experience, sales, search engine ranking,
           brand positioning and related metrics, whilst demonstrating excellent <span className="bold">communication skills.</span>"
           </p>
           <div className="container-icon">
@@ -194,7 +200,7 @@ class MainPage extends Component{
               <span>•   </span>
               <span>•   </span>
             </div>
-            <div id="center"></div>
+            <img className="icon-2" src="./feedback.png" />
             <div className="saving">
               <span>•   </span>
               <span>•   </span>
