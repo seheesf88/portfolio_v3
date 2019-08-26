@@ -2,6 +2,7 @@
 .main {
   margin-bottom: 100px;
   /* padding: 40px; */
+  /* background-color: #f6f5f4; */
 
 }
 
@@ -66,7 +67,8 @@
   /* margin-bottom: 50px; */
   /* border-bottom: 1px solid; */
   /* background-color: #F7F9FB; */
-  background-color: #f6f5f4
+  /* background-color: #f6f5f4 */
+  /* background-color: #efecea; */
 }
 
 .title, .hi {
@@ -143,7 +145,7 @@
   margin-top: 140px;
   /* display: inline; */
   height: 480px;
-  background-color: #F7F9FB;
+  /* background-color: #F7F9FB; */
   /* width: 100%; */
   padding: 10px 40px;
 }
@@ -530,7 +532,7 @@
 }
 
 .fourP {
-  background-color: #F7F9FB;
+  /* background-color: #F7F9FB; */
   /* background-color: #f6f5f4; */
   padding:10px 40px 80px;
 }

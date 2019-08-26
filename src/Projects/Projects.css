@@ -11,7 +11,7 @@
 }
 
 .project-item-one, .project-item-two, .project-item-three {
-  margin: 20px 30px;
+  margin: 50px 30px;
   display: inline;
   /* border: 1px solid green; */
   width: 600px;
