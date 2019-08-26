@@ -110,9 +110,6 @@ class Skills extends Component{
               </div>
             </div>
         </div>
-
-        <div className="skills-sets">
-        </div>
     </div>
     )
   }

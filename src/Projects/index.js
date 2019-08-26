@@ -72,7 +72,7 @@ class Projects extends Component{
                   <span className="tech-stack">JavaScript</span> + <span className="tech-stack">React.js</span> + <span className="tech-stack">Python</span> + <span className="tech-stack">Flask</span>
                 </div>
                 <div className="project-description-two">
-                  <ul>
+                  <ul className="project-description-ul">
                     <li>Recreated Instagram as a <span className="hightlight">React</span> application and <span className="hightlight">Flask</span> <span className="hightlight">RESTful API</span> with <span className="hightlight">CRUD</span> functionality, Image Upload, User Register/Login Authentication with password encryption, and Facebook <span className="hightlight">OAuth.</span></li>
                     <li>Organized relational data and models with the use of <span className="hightlight">PostgreSQL/SQLite</span> and carefully planned out database tables for User accounts, Following, Posts, Comments, Likes, and Images.</li>
                     <li>Improved proficiency in the efficient connection of front end / back end components, log in features and open authorization.</li>

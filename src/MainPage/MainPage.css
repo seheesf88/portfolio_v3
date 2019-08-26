@@ -536,3 +536,8 @@
   /* background-color: #f6f5f4; */
   padding:10px 40px 80px;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+}
