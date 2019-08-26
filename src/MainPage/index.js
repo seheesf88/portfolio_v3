@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './MainPage.css';
 import WOW from "wowjs";
 import { Link } from 'react-router-dom';
+import Nav from '../Nav';
 import BackgroundImage from "react-background-image";
 import bgImage from "./main.jpg"
 
@@ -80,7 +81,6 @@ class MainPage extends Component{
 
     return(
     <div className="main">
-
         <div className="intro">
           <div className="hi">Hi, </div>
           <div className="title">I am
@@ -191,7 +191,7 @@ class MainPage extends Component{
           "Able to provide rapid, robust and client-acclaimed front-end and back-end web development <span className="bold">optimizing</span> user experience, sales, search engine ranking,
           brand positioning and related metrics, whilst demonstrating excellent <span className="bold">communication skills.</span>"
           </p>
-          <div className="container-icon">
+          <div className="container-icon-four">
             <img className="icon-3" src="./back.png" />
             <div className="saving">
               <span>•   </span>
