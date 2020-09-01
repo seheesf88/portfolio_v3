@@ -31,7 +31,7 @@ class Contacts extends Component{
             <div className="contact-info">
               <span className="contact-link"><a href="mailto:seheesf88@gmail.com"><img className="contact" src="./email.png" /></a></span>
               <span className="contact-link"><a href="https://www.linkedin.com/in/sehee-son/"><img className="contact" src="./linkedin-logo.png" /></a></span>
-              <span className="contact-link"><Link to="https://github.com/seheesf88"><img className="contact" src="./github.png" /></Link></span>
+              <span className="contact-link"><a href="https://github.com/seheesf88"><img className="contact" src="./github.png" /></a></span>
               <span className="contact-link"><a href="../Resume_SeHee_Son_v16.pdf" download><img className="contact" src="./download (1).png" /></a></span>
 
             </div>
