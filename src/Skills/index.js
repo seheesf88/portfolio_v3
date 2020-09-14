@@ -61,6 +61,7 @@ class Skills extends Component{
                 <li><img className="bullet" src="./bullet.png" />React.js + Redux</li>
                 <li><img className="bullet" src="./bullet.png" />Node.js</li>
                 <li><img className="bullet" src="./bullet.png" />Flask</li>
+                <li><img className="bullet" src="./bullet.png" />Django</li>
                 <li><img className="bullet" src="./bullet.png" />JQuery / Vanila.js</li>
                 <li><img className="bullet" src="./bullet.png" />Express.js</li>
                 <li><img className="bullet" src="./bullet.png" />Bootstrap</li>
@@ -92,7 +93,7 @@ class Skills extends Component{
                   <li><img className="bullet" src="./bullet.png" />Responsive Desigin</li>
                   <li><img className="bullet" src="./bullet.png" />UX/UI</li>
                   <li><img className="bullet" src="./bullet.png" />Debugging / Testing</li>
-                  <li><img className="bullet" src="./bullet.png" />troubleshooting</li>
+                  <li><img className="bullet" src="./bullet.png" />Troubleshooting</li>
                 </ul>
             </div>
           </div>

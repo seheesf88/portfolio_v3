@@ -88,7 +88,7 @@ class MainPage extends Component{
             <span
              className="txt-rotate"
              data-period="2000"
-             data-rotate='[ "SeHee.", "a Software Engineer.", "a React Developer.", "a Problem Solver.", "a Team player." ]'></span>
+             data-rotate='[ "SeHee.", "a Software Engineer.", "a React Developer.", "a Problem Solver.", "a Team Player." ]'></span>
           </div>
         </div>
 
