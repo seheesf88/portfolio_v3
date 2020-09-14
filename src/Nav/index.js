@@ -16,7 +16,7 @@ class Nav extends Component{
       <div className="navbar">
           <div className="nav-list" id="logo">
             <Link style={{ textDecoration: 'none'}} to="/">
-              <img src="./logo.png"/>
+              <img style={{ width: '180px', paddingTop: '18px'}} src="./logo.png"/>
             </Link>
           </div>
           <div className="nav-list item-list">

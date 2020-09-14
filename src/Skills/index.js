@@ -92,7 +92,7 @@ class Skills extends Component{
                   <li><img className="bullet" src="./bullet.png" />Responsive Desigin</li>
                   <li><img className="bullet" src="./bullet.png" />UX/UI</li>
                   <li><img className="bullet" src="./bullet.png" />Debugging / Testing</li>
-                  <li><img className="bullet" src="./bullet.png" />Troulbleshooting</li>
+                  <li><img className="bullet" src="./bullet.png" />troubleshooting</li>
                 </ul>
             </div>
           </div>
