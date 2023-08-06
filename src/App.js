@@ -7,19 +7,20 @@ import Home from './Home';
 import Skills from './Skills';
 import Projects from './Projects';
 import Contacts from './Contacts';
+import ContactsV4 from './ContactsV4';
 
 const App = () => {
-  const v4 = false;
+  const v4 = true;
   return (
     <main>
       { 
-        v4 ? <Nav /> : <></>
+        v4 ? <></> : <Nav />
       }
       <Switch>
-        <Route exact path='/' component = { v4 ? MainPage : Home } />
+        <Route exact path='/' component = { v4 ? Home : MainPage } />
         <Route exact path='/skills' component = { Skills } />
         <Route exact path='/projects' component = { Projects } />
-        <Route exact path='/contact' component = { Contacts } />
+        <Route exact path='/contact' component = { v4 ? ContactsV4 : Contacts } />
       </Switch>
     </main>
   );
