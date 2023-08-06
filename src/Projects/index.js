@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './Projects.css';
-import Nav from '../Nav'
-import Footer from '../Footer'
 import WOW from "wowjs";
 import { Link } from 'react-router-dom'
 
@@ -20,7 +18,6 @@ class Projects extends Component{
   render(){
     return(
       <div>
-        <Nav />
         <div className="project-container">
         <h1 id="project">Projects.</h1>
 

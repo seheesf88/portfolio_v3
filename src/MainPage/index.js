@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import './MainPage.css';
 import WOW from "wowjs";
-import { Link } from 'react-router-dom';
-import Nav from '../Nav';
-import BackgroundImage from "react-background-image";
-import bgImage from "./main.jpg"
-
 
 class MainPage extends Component{
   constructor(){

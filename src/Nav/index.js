@@ -30,9 +30,3 @@ class Nav extends Component{
 }
 
 export default Nav
-
-
-// <div className="nav-item"><Link style={{ textDecoration: 'none'}} to="/aboutme">About me.</Link></div>
-
-// <div>SEHEE</div>
-// <div>SON<span className="dot">.</span></div>

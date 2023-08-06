@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './Skills.css';
-import Nav from '../Nav'
-import Footer from '../Footer'
 import WOW from "wowjs";
-// import { Link } from 'react-router-dom'
 
 
 class Skills extends Component{
@@ -22,7 +19,6 @@ class Skills extends Component{
 
     return(
       <div>
-        <Nav />
         <h1>Skills.</h1>
         <div className="container-skills">
           <div className="skill-panel">

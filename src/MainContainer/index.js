@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-
-import Nav from '../Nav'
 import MainPage from '../MainPage'
-import Footer from '../Footer'
 
 
 class MainContainer extends Component{
@@ -15,7 +12,6 @@ class MainContainer extends Component{
 
     return(
       <div>
-        <Nav />
         <MainPage />
       </div>
     )

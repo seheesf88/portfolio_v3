@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './AboutMe.css';
-import Nav from '../Nav'
-// import { Link } from 'react-router-dom'
 
 
 class AboutMe extends Component{
@@ -15,7 +13,6 @@ class AboutMe extends Component{
 
     return(
       <div>
-        <Nav />
         <h1 className="">About Me.</h1>
         <div className="aboutme">
           <p className="aboutme-item">
