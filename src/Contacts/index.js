@@ -17,7 +17,7 @@ class Contacts extends Component{
           </div>
           <div className="avatar-discription">
             <div className="contact-intro">
-              <div id="contact-name">SeHee Son</div>
+              <div id="contact-name">SeHee</div>
               <div className="contact-address">San Francisco, CA</div>
               <div className="contact-address">seheesf88@gmail.com</div>
               <div className="contact-address" id="findmeon">Find me on..</div>

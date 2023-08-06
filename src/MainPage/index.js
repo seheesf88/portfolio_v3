@@ -161,12 +161,12 @@ class MainPage extends Component{
             </div>
           </div>
           <div className="flip-card">
-            <div className="container-icon bottom wow slideInUp"                     data-wow-duration="1s"
-                                data-wow-delay="1s"
-                                data-wow-offset="10"
-                                data-wow-iteration="1"
-                                data-wow-duration="2s"
-                                >
+            <div className="container-icon bottom wow slideInUp"
+              data-wow-delay="1s"
+              data-wow-offset="10"
+              data-wow-iteration="1"
+              data-wow-duration="2s"
+              >
               <div className="diamond" id="diamond-technologies">
                 <div className="text">
                   <div>technologies</div>
