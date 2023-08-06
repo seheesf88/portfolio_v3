@@ -1,0 +1,15 @@
+.home {
+  height: 100vh;
+  background-color: #093145;
+
+  &__body {
+    padding: 16px;
+  }
+
+  &__footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 16px;
+  }
+}

@@ -1,0 +1,23 @@
+.header {
+  height: 5vh;
+  padding: 16px;
+  display: flex;
+  flex-direction: columns;
+  justify-content: space-between;
+  color: #9EC9F4;
+
+  &__status {
+    display: flex;
+    flex-direction: columns;
+    justify-content: space-between;
+    margin-right: 8px;
+  }
+
+  &__status-light {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #4FF222;
+    margin-right: 10px;
+  }
+}
