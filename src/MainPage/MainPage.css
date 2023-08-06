@@ -1,43 +1,34 @@
 /* "*" */
 .main {
   margin-bottom: 100px;
-  /* padding: 40px; */
-  /* background-color: #f6f5f4; */
-
 }
-
-/* .background {
-  z-index: 1;
-  opacity: 0.2;
-  position: relative;
-} */
-
 
 .arrow{
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translate(-50%,-50%);
-    /* border: 1px solid; */
 }
+
 .arrow span{
     display: block;
     width: 10px;
     height: 10px;
-    /* border-bottom: 5px solid #06A8FF;
-    border-right: 5px solid #06A8FF; */
     border-bottom: 5px solid black;
     border-right: 5px solid black;
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
 }
+
 .arrow span:nth-child(2){
     animation-delay: -0.2s;
 }
+
 .arrow span:nth-child(3){
     animation-delay: -0.4s;
 }
+
 @keyframes animate {
     0%{
         opacity: 0;
@@ -52,23 +43,12 @@
     }
 }
 
-
-
-
-
-
 /* intro */
 .intro {
   height: 400px;
   width: 100%;
   font-size: 50px;
   padding-top: 140px;
-  /* padding: 140px 120px 40px 120px; */
-  /* margin-bottom: 50px; */
-  /* border-bottom: 1px solid; */
-  /* background-color: #F7F9FB; */
-  /* background-color: #f6f5f4 */
-  /* background-color: #efecea; */
 }
 
 .title, .hi {
@@ -76,18 +56,9 @@
   position: relative;
   z-index: 100;
   margin-left: 300px;
-  /* margin: 0.4em 0; */
-  /* font-size: 3.5em; */
-  /* border: 1px solid red; */
-}
-
-/* "body" */
-.container-summary {
-  /* padding: 10px 40px; */
 }
 
 /* Frist Section */
-
 .firstP {
   padding: 10px 40px;
 }
@@ -115,8 +86,6 @@
   width: 130px;
   border-radius: 10%;
   margin: 20px 80px;
-  /* align-items: center;
-  justify-content: center; */
   -moz-box-shadow:    3px 3px 5px 6px #ccc;
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
   box-shadow:         3px 3px 5px 6px #ccc;
@@ -140,13 +109,9 @@
 }
 
 /* Second section*/
-
 .secondP {
   margin-top: 140px;
-  /* display: inline; */
   height: 480px;
-  /* background-color: #F7F9FB; */
-  /* width: 100%; */
   padding: 10px 40px;
 }
 
@@ -171,44 +136,36 @@
 .smile-0 {
 	width: 40px;
 	height: 40px;
-	/* position: absolute; */
 	top: 200px;
 	left: 50%;
 	margin: -20px;
-	/* font-size: 30px; */
 	animation: rot 9s infinite linear;
 }
 
 .smile-1 {
   width: 40px;
   height: 40px;
-  /* position: absolute; */
   top: 200px;
   left: 50%;
   margin: -20px;
-  /* font-size: 30px; */
   animation: rot 6s infinite linear;
 }
 
 .smile-2 {
   width: 40px;
   height: 40px;
-  /* position: absolute; */
   top: 200px;
   left: 50%;
   margin: -20px;
-  /* font-size: 30px; */
   animation: rot 8s infinite linear;
 }
 
 .smile-3 {
   width: 40px;
   height: 40px;
-  /* position: absolute; */
   top: 200px;
   left: 50%;
   margin: -20px;
-  /* font-size: 30px; */
   animation: rot 10s infinite linear;
 }
 
@@ -227,7 +184,6 @@
   height: 50px;
   width: 50px;
 }
-
 
 /* Third section */
 .thridP {
@@ -262,11 +218,8 @@
   height: 200px;
   padding-top: 30px;
   padding-left: 15px;
-  /* display: table-cell; */
   vertical-align: middle;
-  /* color: red; */
   text-align: center;
-  /* font-family: 'Open Sans', sans-serif; */
   font-size: 18px;
   text-transform: uppercase;
   -webkit-transform: rotate(-45deg);
@@ -294,111 +247,18 @@
   transform: rotate(-45deg);
 }
 
-.diamond {
-    /* opacity:0.5; */
-    /* background:#676470; */
-    /* transition:all 0.3s ease; */
-}
-
-
 #diamond-technologies {
   margin-top: 30px;
 }
 
-/* .flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
-} */
 
-/* This container is needed to position the front and back side */
-/* .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-} */
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-/* .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-} */
-
-/* Position the front and back side */
-/* .flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-} */
-
-/* Style the front side (fallback if image is missing) */
-/* .flip-card-front {
-  background-color: #bbb;
-  color: black;
-} */
-
-/* Style the back side */
-/* .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-  backface-visibility: visible;
-  padding-top: 0px;
-} */
-
-/* .pictureOne {
-  border: 1px solid;
-  width: 60px;
-  height: 60px;
-  border-bottom: solid 10px rgb(200,30,50);
-  border-right: solid 10px rgb(200,30,50);
-  border-left: solid 10px transparent;
-  border-top: solid 10px transparent;
-  display: inline-block;
-  margin: 0 5px;
-  vertical-align: middle;
-
-} */
-
-
-/* .triangles {
-  display: flex;
-}
-
-.pictureOne {
-    width: 0;
-    height: 0;
-    border-bottom: 250px solid red;
-    border-right: 500px solid transparent;
-    margin-left: 250px;
-    background-image: url('https://www.thesprucepets.com/thmb/5Z5WAqlqp0um9gWQ4KmFwlpfmbA=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/twenty20_e47b3798-dd9b-40b1-91ef-1d820337966e-5aa3f798642dca00363b0df1.jpg')
-}
-
-.pictureTwo {
-  width: 0;
-  height: 0;
-  border-top: 250px solid;
-  border-left: 500px solid transparent;
-  margin-left: -500px;
-  background-color: #D58C25;
-} */
-
-/* body { background: gainsboro; } */
 
 .pageOption {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
-  /* width: 28em;*/
-  /* height: 20em; */
   width: 300px;
   height: 200px;
-
   display: flex;
   justify-content: space-around;
 }
@@ -407,9 +267,6 @@
 .option {
   overflow: hidden;
   position: absolute;
-  /* arctan(27 / 40) = 34.01935deg
-   * need to skew by 90deg - 34.01935deg = 55.98065deg
-  */
   transform: skewX(-55.98deg);
 }
 .option:first-child {
@@ -532,8 +389,6 @@
 }
 
 .fourP {
-  /* background-color: #F7F9FB; */
-  /* background-color: #f6f5f4; */
   padding:10px 40px 80px;
 }
 
@@ -558,14 +413,11 @@
       top: 85%;
       left: 50%;
       transform: translate(-50%,-50%);
-      /* border: 1px solid; */
   }
   .arrow span{
       display: block;
       width: 10px;
       height: 10px;
-      /* border-bottom: 5px solid #06A8FF;
-      border-right: 5px solid #06A8FF; */
       border-bottom: 5px solid black;
       border-right: 5px solid black;
       transform: rotate(45deg);
@@ -599,9 +451,6 @@
     font-size: 40px;
     padding-top: 40px;
     margin-left: 15px;
-    /* background-color: #F7F9FB; */
-    /* background-color: #f6f5f4 */
-    /* background-color: #efecea; */
   }
 
   .title, .hi {
@@ -609,18 +458,9 @@
     position: relative;
     z-index: 100;
     margin-left: 30px;
-    /* margin: 0.4em 0; */
-    /* font-size: 3.5em; */
-    /* border: 1px solid red; */
-  }
-
-  /* "body" */
-  .container-summary {
-    /* padding: 10px 40px; */
   }
 
   /* Frist Section */
-
   .firstP {
     padding: 10px 0px;
   }
@@ -648,8 +488,6 @@
     width: 80px;
     border-radius: 10%;
     margin: 10px 20px;
-    /* align-items: center;
-    justify-content: center; */
     -moz-box-shadow:    3px 3px 5px 6px #ccc;
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
     box-shadow:         3px 3px 5px 6px #ccc;
@@ -676,10 +514,7 @@
 
   .secondP {
     margin-top: 60px;
-    /* display: inline; */
     height: 480px;
-    /* background-color: #F7F9FB; */
-    /* width: 100%; */
     padding: 10px 0px;
   }
 

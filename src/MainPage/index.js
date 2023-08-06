@@ -4,10 +4,8 @@ import WOW from "wowjs";
 
 class MainPage extends Component{
   constructor(){
-    super()
-
-  }
-
+    super();
+  };
 
   componentDidMount() {
     const wow = new WOW.WOW();
@@ -15,7 +13,6 @@ class MainPage extends Component{
   }
 
   render(){
-
     var TxtRotate = function(el, toRotate, period) {
       this.toRotate = toRotate;
       this.el = el;
@@ -213,32 +210,3 @@ class MainPage extends Component{
 }
 
 export default MainPage
-
-
-// <div className="icont"><div className="img"><img id="app" src="./data.png" /></div></div>
-// <div className='pageOption'>
-//   <a href='#' className='option' data-inf='photo'>
-//     <img src='http://imgsrc.hubblesite.org/hu/db/images/hs-2009-28-b-large_web.jpg' />
-//   </a>
-//   <div className="me"></div>
-//   <a href='#' className='option' data-inf='cinema'>
-//     <img src='http://imgsrc.hubblesite.org/hu/db/images/hs-2013-06-a-large_web.jpg' />
-//   </a>
-// </div>
-
-//
-// <BackgroundImage
-//   className="background"
-//   src={bgImage}
-// >
-//   <div className="intro">
-//     <div>Hi, </div>
-//     <div className="title">I am
-//       <span> </span>
-//       <span
-//        className="txt-rotate"
-//        data-period="2000"
-//        data-rotate='[ "SeHee", "Web Developer.", "React Lover.", "your partner!" ]'></span>
-//     </div>
-//   </div>
-// </BackgroundImage>
