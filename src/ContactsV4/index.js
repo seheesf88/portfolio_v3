@@ -24,10 +24,10 @@ const ContactsV4 = () => {
             <div>Find me on..</div>
           </div>
           <div className="contacts__links">
-            <span className="contacts__links-link"><a href="mailto:seheesf88@gmail.com"><img className="contact" src="./email.png" /></a></span>
-            <span className="contacts__links-link"><a href="https://www.linkedin.com/in/sehee-son/"><img className="contact" src="./linkedin-logo.png" /></a></span>
-            <span className="contacts__links-link"><a href="https://github.com/seheesf88"><img className="contact" src="./github.png" /></a></span>
-            <span className="contacts__links-link"><a href="../SeHee_Son_resume.pdf" download><img className="contact" src="./download.png" /></a></span>
+            <span className="contacts__links-link"><a href="mailto:seheesf88@gmail.com"><img className="contacts__link-icon" src="./email.png" /></a></span>
+            <span className="contacts__links-link"><a href="https://www.linkedin.com/in/sehee-son/"><img className="contacts__link-icon" src="./linkedin-logo.png" /></a></span>
+            <span className="contacts__links-link"><a href="https://github.com/seheesf88"><img className="contacts__link-icon" src="./github.png" /></a></span>
+            <span className="contacts__links-link"><a href="../SeHee_Son_resume.pdf" download><img className="contacts__link-icon" src="./download.png" /></a></span>
           </div>
         </div>
       </div>
