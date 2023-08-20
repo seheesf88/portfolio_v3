@@ -12,7 +12,6 @@
     padding: 16px;
     position: sticky;
     bottom: 0;
-    border: 1px solid yellow
   }
 
   &__body-sehee {
@@ -21,11 +20,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px dashed red;
   }
 
   &__body-sehee-head {
-    border: 1px solid green;
     z-index: 2;
   }
 
@@ -33,7 +30,6 @@
     // position: absolute;
     width: 400px;
     bottom: 0;
-    border: 1px solid red;
     z-index: 1;
 
     @media screen and (max-width: 861px) {
@@ -50,40 +46,8 @@
   }
 }
 
-
-article {
-  // width: 90%;
-  // max-width: 600px;
-  padding: 20px;
-  margin: 0px auto;
-}
-
-h2 {
-  text-align: center;
-  padding: 40px 0px 0px 0px;
-  font-size: 3em;
-}
-
-p {
-  font-size: 1.5em;
-  text-align: center;
-}
-
-@media
-(prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  body {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 11px;
   }
 }
