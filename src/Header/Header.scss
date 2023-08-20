@@ -1,6 +1,7 @@
 .header {
-  height: 5vh;
+  min-height: 5vh;
   padding: 16px;
+  border: 1px solid red;
   display: flex;
   flex-direction: columns;
   justify-content: space-between;

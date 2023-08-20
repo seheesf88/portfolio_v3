@@ -10,7 +10,7 @@ import Projects from './Projects';
 import ContactsV4 from './ContactsV4';
 
 const App = () => {
-  const v4 = false;
+  const v4 = true;
   return (
     <main>
       { 

@@ -1,6 +1,10 @@
 .navBar {
+  position: sticky;
+  top: 16px;
+  min-height: 15vh;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 
   &__btn {
     display: flex;

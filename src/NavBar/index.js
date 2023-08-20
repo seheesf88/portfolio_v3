@@ -39,7 +39,7 @@ const NavBar = () => {
         btns.map((btn, idx) => {
           return (
             <div className="navBar__btn" key={idx} onClick={btn.btnHandler}>
-              <img src={btn.icon} class="navBar__btn-icon" />
+              <img src={btn.icon} className="navBar__btn-icon" />
               <div class="navBar__btn-text">{ btn.text }</div>
             </div>
           )
