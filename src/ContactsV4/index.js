@@ -7,7 +7,7 @@ const ContactsV4 = () => {
     <div className="contacts">
       <h1>Contacts.</h1>
       <div className="contacts__body">
-        <div class="contacts__calendly">
+        <div className="contacts__calendly">
           <InlineWidget
             url="https://calendly.com/seheesf88"
             pageSettings={{
