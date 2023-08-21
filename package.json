@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "chart.js": "^2.8.0",
     "react": "^16.8.6",
     "react-background-image": "^1.2.0",
     "react-calendly": "^4.1.1",
