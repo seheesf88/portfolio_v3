@@ -1,53 +1,131 @@
-.home {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+// .home {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 100vh;
 
-  &__body {
-    min-height: 75vh;
+//   &__body {
+//     min-height: 75vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-end;
+//     align-items: center;
+//     padding: 16px;
+//     position: sticky;
+//     bottom: 0;
+//   }
+
+//   &__body-sehee {
+//     width: 30%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   &__body-sehee-head {
+//     z-index: 2;
+//   }
+
+//   &__body-sehee-body {
+//     // position: absolute;
+//     width: 400px;
+//     bottom: 0;
+//     z-index: 1;
+
+//     @media screen and (max-width: 861px) {
+//       top: 23vh;
+//       left: 30px;
+//     }
+//   }
+
+//   &__footer {
+//     position: fixed;
+//     bottom: 0;
+//     width: 100%;
+//     padding: 16px;
+//   }
+// }
+
+// @media (prefers-reduced-motion: no-preference) {
+//   html {
+//     scroll-behavior: smooth;
+//   }
+// }
+
+.home {
+  width: 100%;
+  &__background {
+    background-image: linear-gradient(to bottom, #efdfac, #e4d295, #d9c67f, #cdba68, #c1ae51, #bf9541, #bb7d38, #b36433, #9c3f42, #74284a, #421d46, #0b1233);
+  }
+
+  &__greeting {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  &__sehee-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__sehee {
+    width: 35%;
+  }
+
+  &__yam-container {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__yam {
+    width: 20%;
+    margin-left: 20%;
+  }
+
+  &__mango-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  &__mango {
+    width: 40%;
+    margin-top: 30%;
+  }
+
+  &__desk-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+
+  &__keyboard-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding: 16px;
-    position: sticky;
-    bottom: 0;
   }
 
-  &__body-sehee {
-    width: 30%;
+  &__keyboard {
+    width: 22%;
+    margin-bottom: 7%;
+  }
+
+  &__calendly {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
-  &__body-sehee-head {
-    z-index: 2;
-  }
-
-  &__body-sehee-body {
-    // position: absolute;
-    width: 400px;
-    bottom: 0;
-    z-index: 1;
-
-    @media screen and (max-width: 861px) {
-      top: 23vh;
-      left: 30px;
-    }
-  }
-
-  &__footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 16px;
-  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
+.here {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 25%;
 }
