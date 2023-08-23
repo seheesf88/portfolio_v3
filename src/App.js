@@ -1,7 +1,8 @@
 import React from 'react';
-import { Route , Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
-import Nav from './Nav'
+import Nav from './Nav';
+import NavBar from './NavBar';
 import MainPage from './MainPage';
 import Home from './Home';
 import Skills from './Skills';
@@ -13,9 +14,9 @@ const App = () => {
   const v4 = false;
   return (
     <main>
-      { 
-        v4 ? <></> : <Nav />
-      }
+      {/* { 
+        v4 ? <NavBar /> : <Nav />
+      } */}
       <Switch>
         <Route exact path='/' component = { v4 ? Home : MainPage } />
         <Route exact path='/skills' component = { Skills } />

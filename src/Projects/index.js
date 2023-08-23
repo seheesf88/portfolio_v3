@@ -31,20 +31,19 @@ class Projects extends Component{
                   </a>
                 </div>
                 <div className="project-item-one">
-                  <div className="project-title">Flight Tracker</div>
+                  <div className="project-title">The Chart app</div>
                   <div className="project-tech-stack">
-                    <span className="tech-stack">JavaScript</span> + <span className="tech-stack">React</span> + <span className="tech-stack">Node.js</span></div>
+                    <span className="tech-stack">JavaScript</span> + <span className="tech-stack">React</span> + <span className="tech-stack">Chart.js</span></div>
                   <div className="project-description">
                     <ul>
-                      <li>Executed the implementation of React application and Node.Js/Express server to connect to <span className="hightlight">3rd party</span> Airline Flights <span className="hightlight">API</span> to send and receive <span className="hightlight">HTTP requests.</span></li>
-                      <li>Took an integral role in designing model schemas for User Profiles, Posts, Flight & Airline Info in <span className="hightlight">mongoDB</span> maintained using Mongoose ODM with intentions of storing data as JavaScript objects.</li>
-                      <li>Ensured increase in the ability to connect with third party APIs and utilize best-practices for <span className="hightlight">User Interface (UI) design.</span></li>
+                      <li>The Stock Price Visualization App is a user-friendly tool for visualizing daily stock prices of various companies.</li>
+                      <li>Input a stock symbol and specify the desired number of days to generate a historical price chart.</li>
+                      <li>Ideal for investors, curious individuals, and those interested in tracking stock trends, offering an easy and informative way to explore stock market data.</li>
                     </ul>
                   </div>
                   <div className="links">
-                    <span><a href="https://git.generalassemb.ly/seheesf88/flighttracker-extend-frontend"> Github(Front-End) </a></span> |
-                    <span><a href="https://git.generalassemb.ly/seheesf88/project3-extend-backend"> Github(Back-End) </a></span> |
-                    <span><a href="https://react-flight-front.herokuapp.com/"> Heroku</a></span>
+                    <span><a href="https://github.com/seheesf88/the-chart-app"> Github</a></span> |
+                    <span><a href="https://seheesf88.github.io/the-chart-app/">Try it</a></span>
                   </div>
                 </div>
               </div>

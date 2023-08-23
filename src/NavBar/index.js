@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './NavBar.scss';
 
 const NavBar = () => {
@@ -6,34 +7,26 @@ const NavBar = () => {
     {
       text: "chat with SeHee",
       icon: "./icons/face.svg",
-      alt: "",
-      btnHandler: () => {
-        alert('here')
-      }
+      alt: "face",
+      path: "/"
     },
     {
       text: "Share My Project",
       icon: "./icons/phone.svg",
-      alt: "",
-      btnHandler: () => {
-        alert('here')
-      }
+      alt: "phone",
+      path: "/skills"
     },
     {
       text: "Participants",
       icon: "./icons/phone.svg",
-      alt: "",
-      btnHandler: () => {
-        alert('here')
-      }
+      alt: "phone",
+      path: "/projects"
     },
     {
       text: "Contacts",
       icon: "./icons/phone.svg",
-      alt: "",
-      btnHandler: () => {
-        alert('here')
-      }
+      alt: "phone",
+      path: "/contacts"
     }
   ];
 
@@ -42,10 +35,10 @@ const NavBar = () => {
       {
         btns.map((btn, idx) => {
           return (
-            <div className="navBar__btn" key={idx} onClick={btn.btnHandler}>
+            <Link className="navBar__btn" key={idx} to={btn.path}>
               <img src={btn.icon} className="navBar__btn-icon" alt={btn.alt} />
               <div class="navBar__btn-text">{ btn.text }</div>
-            </div>
+            </Link>
           )
         })
       }
