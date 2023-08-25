@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Skills.css';
+import './Skills.scss';
 import WOW from "wowjs";
 
 
@@ -15,12 +15,35 @@ class Skills extends Component{
   }
 
   render(){
+    const skills = [
+      {
+        img: "./book.png",
+        title : "Frameworks & Libraries",
+        list : ["React.js + Redux", "Vue.js + Vuex", "Node.js", "Flask", "Django", "JQuery", "Express.js", "Bootstraps"]
+      },
+      {
+        img: "./database.png",
+        title : "Database",
+        list : ["MongoDB", "Firebase", "PostgreSQL", "SQLite"]
+      },
+      {
+        img: "./idea.png",
+        title : "Methodologies & Others",
+        list : ["RESTful architechture", "CRUD pattern", "MVC pattern", "Responsive Design", "UX/UI"]
+      },
+      {
+        img: "./skill.png",
+        title : "Personal Skills",
+        list : ["Detail-Oriented", "Problem-solving", "Teamwork", "Communication"]
+      },
+    ];
+
     return(
-      <div>
+      <div className="skills">
         <h1>Skills.</h1>
-        <div className="container-skills">
-          <div className="skill-panel">
-            <div className="skill-items wow slideInLeft"
+        <div className="skills__languages mt-3 my-md-5">
+          <div className="skills__languages-sets">
+            <div className="skills__languages-sets-item wow slideInLeft"
               data-wow-duration="2s"
               data-wow-delay="1s"
               data-wow-offset="10"
@@ -28,7 +51,7 @@ class Skills extends Component{
             >
               <img src="./js.png" />
             </div>
-            <div className="skill-items wow fadeInDown"
+            <div className="skills__languages-sets-item wow fadeInDown"
               data-wow-duration="2s"
               data-wow-delay="1s"
               data-wow-offset="10"
@@ -36,7 +59,7 @@ class Skills extends Component{
             >
               <img src="./python.png" />
             </div>
-            <div className="skill-items wow fadeInUp"
+            <div className="skills__languages-sets-item wow fadeInUp"
               data-wow-duration="2s"
               data-wow-delay="1s"
               data-wow-offset="10"
@@ -44,7 +67,7 @@ class Skills extends Component{
             >
               <img src="./html.png" />
             </div>
-            <div className="skill-items wow slideInRight"
+            <div className="skills__languages-sets-item wow slideInRight"
               data-wow-duration="1s"
               data-wow-delay="1s"
               data-wow-offset="10"
@@ -54,62 +77,32 @@ class Skills extends Component{
             </div>
           </div>
         </div>
-        <div className="skills-sets">
-          <div className="skillbox">
-            <div className="title-img"><img className="skill-img" src="./book.png" /></div>
-            <div className="skills-sets-items frameworks">
-              <div className="title-sub line">Frameworks & Libraries</div>
-              <ul className="skill-list">
-                <li><img className="bullet" src="./bullet.png" />React.js + Redux</li>
-                <li><img className="bullet" src="./bullet.png" />Vue.js + Vuex</li>
-                <li><img className="bullet" src="./bullet.png" />Node.js</li>
-                <li><img className="bullet" src="./bullet.png" />Flask</li>
-                <li><img className="bullet" src="./bullet.png" />Django</li>
-                <li><img className="bullet" src="./bullet.png" />JQuery / Vanila.js</li>
-                <li><img className="bullet" src="./bullet.png" />Express.js</li>
-                <li><img className="bullet" src="./bullet.png" />Bootstrap</li>
-              </ul>
-            </div>
-          </div>
-          <div className="skillbox">
-            <div className="title-img"><img className="skill-img" src="./database.png" /></div>
-              <div className="skills-sets-items databases">
-                <div className="title-sub oneline">Database</div>
-                <ul className="skill-list">
-                  <li><img className="bullet" src="./bullet.png" />NoSQL</li>
-                  <li className="space">- MongoDB</li>
-                  <li><img className="bullet" src="./bullet.png" />SQL - SQLite, </li>
-                  <li className="space">- PostgreSQL</li>
-                  <li><img className="bullet" src="./bullet.png" />Firebase</li>
-                </ul>
-              </div>
-          </div>
-          <div className="skillbox">
-            <div className="title-img"><img className="skill-img" src="./idea.png" /></div>
-              <div className="skills-sets-items methodologies">
-                <div className="title-sub line">Methodologies & Others</div>
-                <ul className="skill-list">
-
-                  <li><img className="bullet" src="./bullet.png" />RESTful architechture</li>
-                  <li><img className="bullet" src="./bullet.png" />CRUD pattern</li>
-                  <li><img className="bullet" src="./bullet.png" />MVC pattern</li>
-                  <li><img className="bullet" src="./bullet.png" />Responsive Desigin</li>
-                  <li><img className="bullet" src="./bullet.png" />UX/UI</li>
-                </ul>
-            </div>
-          </div>
-          <div className="skillbox">
-            <div className="title-img"><img className="skill-img" src="./skill.png" /></div>
-              <div className="skills-sets-items personal">
-                <div className="title-sub oneline">Personal Skills</div>
-                <ul className="skill-list">
-                  <li><img className="bullet" src="./bullet.png" />Detail-Oriented</li>
-                  <li><img className="bullet" src="./bullet.png" />Problem-Solving</li>
-                  <li><img className="bullet" src="./bullet.png" />Teamwork</li>
-                  <li><img className="bullet" src="./bullet.png" />Communication</li>
-                </ul>
-              </div>
-            </div>
+        <div className="skills__items mt-md-5 pt-5">
+          {
+            skills.map((set, idx) => {
+              return (
+                <div className="skills__items-sets" key={idx}>
+                  <div className="skills__items-sets-img">
+                    <img src={set.img} />
+                  </div>
+                  <div className="skills__items-sets-content">
+                    <div className="skills__items-sets-title my-3 my-md-5">{set.title}</div>
+                    <ul className="skills__items-sets-list">
+                      {
+                        set.list.map((item, idx) => {
+                          return (
+                            <li key={idx} className="py-1">
+                              <img className="bullet mr-3" src="./bullet.png" />{item}
+                            </li>
+                          )
+                        })
+                      }
+                    </ul>
+                  </div>
+                </div>
+              ) 
+            })
+          }
         </div>
     </div>
     )

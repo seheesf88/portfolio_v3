@@ -1,0 +1,33 @@
+.projects {
+  &__project-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__project-panel {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__project-img {
+  }
+
+  &__project-title {
+    font-size: 45px;
+  }
+
+  &__project-tech-stack {
+    border: 1px solid #dbdbd5;
+    background-color: #dbdbd5;
+    padding: 2px;
+  }
+
+  &__project-description {
+    li {
+      // list-style: none;
+    }
+  }
+}
