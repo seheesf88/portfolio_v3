@@ -1,0 +1,252 @@
+.project-container {
+
+}
+
+.project-items {
+  display: flex;
+  flex-direction: auto auto;
+  padding: 10px;
+  /* margin-left: 200px; */
+
+}
+
+.project-item-one, .project-item-two, .project-item-three {
+  margin: 50px 30px;
+  display: inline;
+  /* border: 1px solid green; */
+  width: 600px;
+  text-align: right;
+}
+
+.project-one, .project-three {
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.project-title {
+  font-size: 45px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.project-tech-stack {
+  margin-left: 20px;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.tech-stack {
+  border: 1px solid #dbdbd5;
+  padding: 2px;
+  background-color: #dbdbd5;
+}
+.project-description {
+  font-size: 16px;
+  /* border: 1px solid blue; */
+  width: 530px;
+  margin: 20px 20px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project-two {
+  text-align: right;
+  padding-right: 170px;
+}
+
+.project-title-two {
+  font-size: 45px;
+  margin-right: 40px;
+}
+
+.project-tech-stack-two {
+  margin-right: 40px;
+  margin-top: 15px;
+}
+
+.project-description-two {
+  font-size: 16px;
+  /* border: 1px solid blue; */
+  width: 530px;
+  margin: 20px 20px;
+  text-align: left;
+
+}
+
+
+.panel {
+  display: inline-grid;
+  grid-template-columns: auto;
+  /* margin-top: 100px; */
+  /* border: 1px solid red; */
+  width: 1000px;
+}
+
+
+.frame {
+  height: 300px;
+  width: 300px;
+  border: 1px;
+  position: relative;
+  margin: 2%;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.frame:hover img {
+  /* transform: scale(1.05); */
+  /* opacity: 0.2; */
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.frame img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 300px;
+  width: 300px;
+}
+
+.links {
+  text-align: center;
+}
+
+.hightlight {
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .project-container {
+    width: 30%;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .project-items {
+    display: flex;
+    flex-direction: column;
+    /* flex-flow: column; */
+    padding: 0px;
+    align-items: center;
+    /* margin-left: 200px; */
+
+  }
+
+  .project-item-one, .project-item-two, .project-item-three {
+    margin: 5px 3px;
+    display: inline;
+    /* border: 1px solid green; */
+    width: 300px;
+    text-align: center;
+  }
+
+  .project-one, .project-two, .project-three {
+      text-align: center;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 40px;
+      padding-bottom: 80px;
+      margin-right: 0px;
+  }
+
+  .project-title, .project-title-two {
+    font-size: 45px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .project-tech-stack, .project-tech-stack-two {
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .tech-stack {
+    border: 1px solid #dbdbd5;
+    padding: 2px;
+    background-color: #dbdbd5;
+  }
+
+  /* .project-description {
+    font-size: 16px;
+    width: 200px;
+    margin: 20px 0px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+  } */
+
+  .project-description-ul {
+    margin: 0px;
+  }
+
+  /* .project-title-two {
+    font-size: 45px;
+    margin-right: 0px;
+  } */
+
+  /* .project-tech-stack-two {
+    margin-right: 0px;
+    margin-top: 15px;
+  } */
+
+  .project-description-two, .project-description {
+    font-size: 16px;
+    /* border: 1px solid blue; */
+    width: 80%;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+
+  .panel {
+    display: inline-grid;
+    grid-template-columns: auto;
+    /* margin-top: 100px; */
+    /* border: 1px solid red; */
+    width: 20px;
+  }
+
+
+  .frame {
+    height: 80%;
+    width: 80%;
+    border: 1px;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    margin-top: 70px;
+  }
+
+  .frame:hover img {
+    /* transform: scale(1.05); */
+    /* opacity: 0.2; */
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .frame img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .links {
+    text-align: center;
+  }
+
+  .hightlight {
+    font-weight: bold;
+  }
+
+
+}

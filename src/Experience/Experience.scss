@@ -1,0 +1,18 @@
+.experience {
+  &__company-title {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  &__company-title:hover {
+    text-decoration: none;
+  }
+
+  &__company-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
