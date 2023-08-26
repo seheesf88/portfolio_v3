@@ -20,12 +20,20 @@ const Home = () => {
   const greenbanc = './icons/greenbanc.svg';
 
   //default settings
-  let fullPg = 10
+  let fullPg = 6
   let intro_pg = { factor: "1", offset: "0"}
-  let skills_pg = { factor: "1.5", offset: "1.5"}
-  let experience_pg = { factor: "3", offset: "3"}
-  let project_pg = {factor: "1.5", offset: "6"}
-  let contact_pg = {factor: "1", offset: "7.5"}
+  let skills_pg = { factor: "1", offset: "1"}
+  let experience_pg = { factor: "2", offset: "2"}
+  let project_pg = {factor: "1", offset: "4"}
+  let contact_pg = {factor: "1", offset: "5"}
+
+  let sehee_contact = { start: 5, end: 6}
+  let yam_contact = { start: 5, end: 6 }
+  let desk_contact = { start: 5, end: 6 }
+  let keybaord_contact = { start: 5, end: 6 }
+  let mango_contact = { start: 5, end: 6 }
+  let coffee_contact = { start: "5.8", end: "6" }
+  let contact_info_contact = { start: 5, end: 6}
 
   //360 * 640 ~ 414×896
   //601×962 ~ 1280×800
@@ -90,10 +98,15 @@ const Home = () => {
           <div>I am a creative software engineer</div>
         </ParallaxLayer>
 
-
-        <ParallaxLayer factor={contact_pg.factor} offset={contact_pg.offset} speed="0.7" sticky={{ start: "8", end: "9"}} className="home__contact__container">
+        <ParallaxLayer
+          factor={contact_pg.factor}
+          offset={contact_pg.offset}
+          speed="0.7"
+          sticky={contact_info_contact}
+          className="home__contact__container"
+        >
           <div className="home__contact-content">
-            <div className="home__contact-subtitle mb-2 mb-md-4">SeHee Son.</div>
+            <div className="home__contact-subtitle">SeHee Son.</div>
             <div className="to">San Francisco, CA</div>
             <div className="to">seheesf88@gmail.com</div>
 
@@ -107,7 +120,7 @@ const Home = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          sticky={{ start: 8.3, end: 9.8}}
+          sticky={sehee_contact}
           className="home__sehee-container"
           onClick={() => ref.current.scrollTo(1)}
         >
@@ -115,7 +128,7 @@ const Home = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          sticky={{ start: 8.6, end: 9 }}
+          sticky={yam_contact}
           className="home__yam-container"
           // onClick={() => ref.current.scrollTo(1)}
         >
@@ -123,21 +136,21 @@ const Home = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          sticky={{ start: 8.6, end: 9 }}
+          sticky={desk_contact}
           className="home__desk-container"
         >
           <img src={desk} />
         </ParallaxLayer>
 
         <ParallaxLayer
-          sticky={{ start: 8.8, end: 9 }}
+          sticky={keybaord_contact}
           className="home__keyboard-container"
         >
           <img src={keyboard} className="home__keyboard"/>
         </ParallaxLayer>
 
         <ParallaxLayer
-          sticky={{ start: 8.8, end: 9 }}
+          sticky={mango_contact}
           className="home__mango-container"
           // onClick={() => ref.current.scrollTo(1)}
         >
@@ -145,7 +158,7 @@ const Home = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          sticky={{ start: 9.8, end: 9.9 }}
+          sticky={coffee_contact}
           className="home__coffee-container"
         >
           <img src={coffee} style={{ width: '8%', marginLeft: '20%' }} />
@@ -155,11 +168,11 @@ const Home = () => {
           <Skills />
         </ParallaxLayer>
 
-        <ParallaxLayer factor={experience_pg.factor} offset={experience_pg.offset} className="home__experience__container">
+        <ParallaxLayer factor={experience_pg.factor} offset={experience_pg.offset} className="home__experience__container border">
           <Experience />
         </ParallaxLayer>
 
-        <ParallaxLayer factor={project_pg.factor} offset={project_pg.offset} className="home__projects-container">
+        <ParallaxLayer factor={project_pg.factor} offset={project_pg.offset} className="home__projects__container border">
           <Projects />
         </ParallaxLayer>
 

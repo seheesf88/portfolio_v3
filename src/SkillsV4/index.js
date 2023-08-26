@@ -40,7 +40,7 @@ class Skills extends Component{
 
     return(
       <div className="skills">
-        <h1>Skills.</h1>
+        <h1 className="my-5 text-center">Skills.</h1>
         <div className="skills__languages mt-3 my-md-5">
           <div className="skills__languages-sets">
             <div className="skills__languages-sets-item wow slideInLeft"
@@ -85,9 +85,9 @@ class Skills extends Component{
                   <div className="skills__items-sets-img">
                     <img src={set.img} />
                   </div>
-                  <div className="skills__items-sets-content">
-                    <div className="skills__items-sets-title my-3 my-md-5">{set.title}</div>
-                    <ul className="skills__items-sets-list">
+                  <div className="skills__items-sets-content w-100">
+                    <div className="skills__items-sets-title mt-5">{set.title}</div>
+                    <ul className="skills__items-sets-list mt-md-5">
                       {
                         set.list.map((item, idx) => {
                           return (
