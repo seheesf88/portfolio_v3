@@ -40,15 +40,12 @@ class Projects extends Component{
     return(
       <div class="projects">
         <h1>Projects.</h1>
-        <div className="projects__project-container mt-md-5">
+        <div className="projects__project-container my-5">
           { 
             projectData.map((project, idx) => {
               return (
                 <div 
-                  className="projects__project-panel mx-2 px-4 wow slideInRight"
-                  data-wow-duration="3s"
-                  data-wow-iteration="1"
-                  data-wow-offset="10"
+                  className="projects__project-panel mx-2 px-4"
                 >
                 <div className="projects__project-img">
                   <a href={project.githubLink}>
