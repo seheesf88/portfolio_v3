@@ -88,17 +88,19 @@
   }
 
   &__coffee-container {
-    height: 15% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     @media only screen and (max-width: 768px) {
       display: none;
     }
   }
 
-  &__contact {
+  &__contact-container {
     display: flex;
     justify-content: flex-start;
-    padding-top: 6%;
+    padding-top: 10%;
 
     @media only screen and (max-width: 768px) {
       padding-top: 10%;
@@ -157,5 +159,3 @@
   height: 100vh;
   overflow-y: scroll;
 }
-
-// 1170

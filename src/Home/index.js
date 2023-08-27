@@ -25,15 +25,13 @@ const Home = () => {
   let skills_pg = { factor: "1", offset: "1"}
   let experience_pg = { factor: "2", offset: "2"}
   let project_pg = {factor: "1", offset: "4"}
-  let contact_pg = {factor: "1", offset: "5"}
+  let contact_pg = {factor: 1, offset: 5}
 
-  let sehee_contact = { start: 5, end: 6}
-  let yam_contact = { start: 5, end: 6 }
-  let desk_contact = { start: 5, end: 6 }
-  let keybaord_contact = { start: 5, end: 6 }
-  let mango_contact = { start: 5, end: 6 }
-  let coffee_contact = { start: "5.8", end: "6" }
-  let contact_info_contact = { start: 5, end: 6}
+  let yam_contact = { start: 4.9, end: 6 }
+  let desk_contact = { start: 4.8, end: 5}
+  let keybaord_contact = { start: 4.2, end: 6 }
+  let mango_contact = { start: 4.4, end: 5.1 }
+  let coffee_contact = { start: 3.8, end: 6 }
 
   //360 * 640 ~ 414×896
   //601×962 ~ 1280×800
@@ -102,8 +100,7 @@ const Home = () => {
           factor={contact_pg.factor}
           offset={contact_pg.offset}
           speed="0.7"
-          sticky={contact_info_contact}
-          className="home__contact__container"
+          className="home__contact-container"
         >
           <div className="home__contact-content">
             <div className="home__contact-subtitle">SeHee Son.</div>
@@ -120,7 +117,8 @@ const Home = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          sticky={sehee_contact}
+          offset="5"
+          speed="3"
           className="home__sehee-container"
           onClick={() => ref.current.scrollTo(1)}
         >
@@ -159,42 +157,43 @@ const Home = () => {
 
         <ParallaxLayer
           sticky={coffee_contact}
+          speed="-0.9"
           className="home__coffee-container"
         >
-          <img src={coffee} style={{ width: '8%', marginLeft: '20%' }} />
+          <img src={coffee} style={{ width: "8%", marginLeft:"20%", marginBottom: "5%"}}/>
         </ParallaxLayer>
 
         <ParallaxLayer factor={skills_pg.factor} offset={skills_pg.offset} className="home__skills-container">
           <Skills />
         </ParallaxLayer>
 
-        <ParallaxLayer factor={experience_pg.factor} offset={experience_pg.offset} className="home__experience__container border">
+        <ParallaxLayer factor={experience_pg.factor} offset={experience_pg.offset} className="home__experience__container">
           <Experience />
         </ParallaxLayer>
 
-        <ParallaxLayer factor={project_pg.factor} offset={project_pg.offset} className="home__projects__container border">
+        <ParallaxLayer factor={project_pg.factor} offset={project_pg.offset} className="home__projects__container">
           <Projects />
         </ParallaxLayer>
 
-        <ParallaxLayer offset="3.2" speed="0.2" style={{ opacity: 0.2 }}>
+        <ParallaxLayer offset="2.8" speed="0.2" style={{ opacity: 0.2 }}>
           <img src={mvcode} style={{ display: 'block', width: '8%', marginLeft: '10%' }} />
           <img src={greenbanc} style={{ display: 'block', width: '12%', marginLeft: '75%' }} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset="3.7" speed="-0.1" style={{ opacity: 0.4 }}>
+        <ParallaxLayer offset="3.2" speed="-0.1" style={{ opacity: 0.4 }}>
           <img src={reeske} style={{ display: 'block', width: '10%', marginLeft: '60%' }} />
           <img src={ixlayer} style={{ display: 'block', width: '15%', marginLeft: '30%' }} />
           <img src={reeske} style={{ display: 'block', width: '4%', marginLeft: '80%' }} />
           <img src={mvcode} style={{ display: 'block', width: '8%', marginLeft: '90%' }} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset="3.7" speed="0.4" style={{ opacity: 0.6 }}>
+        <ParallaxLayer offset="2.7" speed="0.4" style={{ opacity: 0.6 }}>
           <img src={ixlayer} style={{ display: 'block', width: '5%', marginLeft: '75%' }} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
-          <img src={yam} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
-          <img src={yam} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
+        <ParallaxLayer offset="2" speed="0.8" style={{ opacity: 0.1 }}>
+          <img src={ixlayer} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
+          <img src={greenbanc} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
         </ParallaxLayer>
       </Parallax>
     </div>
