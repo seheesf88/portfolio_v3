@@ -101,6 +101,7 @@
     display: flex;
     justify-content: flex-start;
     padding-top: 10%;
+    // pointer-events: auto !important;
 
     @media only screen and (max-width: 768px) {
       padding-top: 10%;
@@ -143,7 +144,7 @@
   }
 
   &__contacts-link:hover {
-    background-color: white;
+    cursor: pointer;
   }
 
   &__contacts-link-icon {

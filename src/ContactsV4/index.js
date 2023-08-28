@@ -4,8 +4,9 @@ import './ContactsV4.scss';
 
 const ContactsV4 = () => {
   return (
-    <div className="contacts">
+    <div className="contacts container">
       <h1>Contacts.</h1>
+
       <div className="contacts__body">
         <div className="contacts__calendly">
           <InlineWidget

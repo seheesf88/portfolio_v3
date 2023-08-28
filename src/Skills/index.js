@@ -16,7 +16,7 @@ class Skills extends Component{
 
   render(){
     return(
-      <div>
+      <div className="container">
         <h1>Skills.</h1>
         <div className="container-skills">
           <div className="skill-panel">
@@ -114,7 +114,7 @@ class Skills extends Component{
               </div>
             </div>
         </div>
-    </div>
+      </div>
     )
   }
 }

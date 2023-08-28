@@ -83,6 +83,7 @@ const Home = () => {
           offset="0.16"
           speed={0.6}
           className="home__greeting px-5 px-md-0"
+          onClick={() => ref.current.scrollTo(6)}
         >
           <div>Hi, I am SeHee!</div>
         </ParallaxLayer>
@@ -92,6 +93,7 @@ const Home = () => {
           offset="0.28"
           speed="0.9"
           className="home__greeting px-5 px-md-0 mt-5"
+          onClick={() => ref.current.scrollTo(6)}
         >
           <div>I am a creative software engineer</div>
         </ParallaxLayer>
@@ -104,14 +106,13 @@ const Home = () => {
         >
           <div className="home__contact-content">
             <div className="home__contact-subtitle">SeHee Son.</div>
-            <div className="to">San Francisco, CA</div>
-            <div className="to">seheesf88@gmail.com</div>
-
+            <div>San Francisco, CA</div>
+            <div>seheesf88@gmail.com</div>
             <div className="home__contacts-links mt-4">
-              <span className="home__contacts-link"><a href="mailto:seheesf88@gmail.com"><img className="home__contacts-link-icon" src="./email.png" /></a></span>
-              <span className="home__contacts-link"><a href="https://www.linkedin.com/in/sehee-son/"><img className="home__contacts-link-icon" src="./linkedin-logo.png" /></a></span>
-              <span className="home__contacts-link"><a href="https://github.com/seheesf88"><img className="home__contacts-link-icon" src="./github.png" /></a></span>
-              <span className="home__contacts-link"><a href="../SeHee_Son_resume.pdf" download><img className="home__contacts-link-icon" src="./download.png" /></a></span>
+              <span className="home__contacts-link"><a href="mailto:seheesf88@gmail.com"><img className="home__contacts-link-icon" src="./icons/email.svg" /></a></span>
+              <span className="home__contacts-link"><a href="https://www.linkedin.com/in/sehee-son/"><img className="home__contacts-link-icon" src="./icons/linkedin.svg" /></a></span>
+              <span className="home__contacts-link"><a href="https://github.com/seheesf88"><img className="home__contacts-link-icon" src="./icons/github.svg" /></a></span>
+              <span className="home__contacts-link"><a href="../SeHee_Son_resume.pdf" download><img className="home__contacts-link-icon" src="./icons/download.svg" /></a></span>
             </div>
           </div>
         </ParallaxLayer>
@@ -120,15 +121,14 @@ const Home = () => {
           offset="5"
           speed="3"
           className="home__sehee-container"
-          onClick={() => ref.current.scrollTo(1)}
         >
-          <img src={sehee} className="home__sehee" />
+          <img src={sehee} className="home__sehee" onClick={() => ref.current.scrollTo(1)}/>
         </ParallaxLayer>
 
         <ParallaxLayer
           sticky={yam_contact}
           className="home__yam-container"
-          // onClick={() => ref.current.scrollTo(1)}
+          onClick={() => ref.current.scrollTo(1)}
         >
           <img src={yam} className="home__yam" />
         </ParallaxLayer>

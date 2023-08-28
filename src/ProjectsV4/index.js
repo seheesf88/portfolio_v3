@@ -16,20 +16,10 @@ class Projects extends Component{
     const projectData = [
       {
         title: "The Chart app",
-        img: "./flighttracker.png",
+        img: "./img/chartApp.png",
         githubLink: "https://github.com/seheesf88/the-chart-app",
         deployURl: "https://seheesf88.github.io/the-chart-app/",
-        description: [
-          "The Stock Price Visualization App is a user-friendly tool for visualizing daily stock prices of various companies.",
-          "Input a stock symbol and specify the desired number of days to generate a historical price chart.",
-          "Ideal for investors, curious individuals, and those interested in tracking stock trends, offering an easy and informative way to explore stock market data."
-        ]
-      },
-      {
-        title: "The Chart app",
-        img: "./flighttracker.png",
-        githubLink: "https://github.com/seheesf88/the-chart-app",
-        deployURl: "https://seheesf88.github.io/the-chart-app/",
+        techStack: ["JavaScript", "React.js", "chart.js"], 
         description: [
           "The Stock Price Visualization App is a user-friendly tool for visualizing daily stock prices of various companies.",
           "Input a stock symbol and specify the desired number of days to generate a historical price chart.",
@@ -47,17 +37,28 @@ class Projects extends Component{
                 <div 
                   className="projects__project-panel mx-2 px-4"
                 >
-                <div className="projects__project-img">
+                <div className="projects__project-img-container">
                   <a href={project.githubLink}>
-                    <img src="./flighttracker.png" />
+                    <img src={project.img} className="projects__project-img"/>
                   </a>
                 </div>
                 <div className="projects__project-content py-5">
                   <div className="projects__project-title text-center mb-3">{project.title}</div>
                   <div className="projects__project-tech text-center">
-                    <span className="projects__project-tech-stack">JavaScript</span> + <span className="tech-stack">React</span> + <span className="tech-stack">Chart.js</span>
+                    {
+                      project.techStack.map((tech, idx) => {
+                        if (idx !== project.techStack.length - 1) {
+                          return (
+                            <span><span className="projects__project-tech-stack">{tech}</span><span className="mx-2">+</span></span>
+                          )
+                        } else {
+                          return (
+                            <span><span className="projects__project-tech-stack">{tech}</span></span>
+                          )
+                        }
+                      })
+                    }
                   </div>
-                  
                   <div className="projects__project-description my-2">
                     <ul>
                       {
