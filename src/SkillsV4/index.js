@@ -19,22 +19,22 @@ class Skills extends Component{
       {
         img: "./book.png",
         title : "Frameworks & Libraries",
-        list : ["React.js + Redux", "Vue.js + Vuex", "Node.js", "Flask", "Django", "JQuery", "Express.js", "Bootstraps"]
+        list : ["React.js + Redux", "Vue.js + Vuex", "Node.js", "Flask", "Django", "Axios", "Express.js", "Bootstraps", "Vuetify"]
       },
       {
         img: "./database.png",
-        title : "Database",
-        list : ["MongoDB", "Firebase", "PostgreSQL", "SQLite"]
+        title : "Methodologies & Database",
+        list : ["RESTful architechture", "CRUD pattern", "MVC pattern", "Responsive Design", "MongoDB", "Firebase", "PostgreSQL", "SQLite"]
       },
       {
         img: "./idea.png",
-        title : "Methodologies & Others",
-        list : ["RESTful architechture", "CRUD pattern", "MVC pattern", "Responsive Design", "UX/UI"]
+        title : "Management & Tools",
+        list : ["Agile scrum methodology", "Jira", "Notion", "Figma", "Github(Git controls)", "Jenkins(ci/cd)"]
       },
       {
         img: "./skill.png",
         title : "Personal Skills",
-        list : ["Detail-Oriented", "Problem-solving", "Teamwork", "Communication"]
+        list : ["Detail-Oriented", "Problem-solving", "Teamwork and Collaboration", "Communication", "Adaptability"]
       },
     ];
 
