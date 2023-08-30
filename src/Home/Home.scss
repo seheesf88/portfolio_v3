@@ -135,12 +135,14 @@
   }
 }
 
+.home__greeting-intro,
+.home__intro-message,
 .home__skills-container,
 .home__experience__container,
 .home__projects__container {
   // overflow: hidden;
   height: 100vh;
-  overflow-x: scroll;
+  overflow-y: scroll;
 }
 
 .yo {
