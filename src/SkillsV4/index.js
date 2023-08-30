@@ -44,32 +44,32 @@ class Skills extends Component{
         <div className="skills__languages mt-3 my-md-5">
           <div className="skills__languages-sets">
             <div className="skills__languages-sets-item wow slideInLeft"
-              data-wow-duration="2s"
-              data-wow-delay="1s"
+              data-wow-duration="4s"
+              data-wow-delay="3s"
               data-wow-offset="10"
               data-wow-iteration="1"
             >
               <img src="./js.png" />
             </div>
             <div className="skills__languages-sets-item wow fadeInDown"
-              data-wow-duration="2s"
-              data-wow-delay="1s"
+              data-wow-duration="4s"
+              data-wow-delay="3s"
               data-wow-offset="10"
               data-wow-iteration="1"
             >
               <img src="./python.png" />
             </div>
             <div className="skills__languages-sets-item wow fadeInUp"
-              data-wow-duration="2s"
-              data-wow-delay="1s"
+              data-wow-duration="4s"
+              data-wow-delay="3s"
               data-wow-offset="10"
               data-wow-iteration="1"
             >
               <img src="./html.png" />
             </div>
             <div className="skills__languages-sets-item wow slideInRight"
-              data-wow-duration="1s"
-              data-wow-delay="1s"
+              data-wow-duration="4s"
+              data-wow-delay="3s"
               data-wow-offset="10"
               data-wow-iteration="1"
             >
