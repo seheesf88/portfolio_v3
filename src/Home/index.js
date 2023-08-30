@@ -410,8 +410,10 @@ const Home = () => {
 
         <ParallaxLayer
           factor="1"
-          offset="1.7"
+          offset="1"
+          speed="1.5"
           onClick={() => ref.current.scrollTo(5)}
+          style={{ display: "flex", justifyContent: "flex-end"}}
           className="home__intro-message"
         >
           <div className="home__intro-message-title">I am a software engineer</div>
