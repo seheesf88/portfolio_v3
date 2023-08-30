@@ -29,7 +29,7 @@ class Projects extends Component{
     ]
     return(
       <div class="projects">
-        <h1 className="text-center my-5">Projects.</h1>
+        <div className="title my-5">Projects.</div>
         <div className="projects__project-container my-5">
           { 
             projectData.map((project, idx) => {

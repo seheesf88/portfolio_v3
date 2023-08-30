@@ -14,7 +14,7 @@ const ap = './gif/ap.gif';
 const Experience = () => {
   return(
     <div className="experience">
-      <h1 className="my-5 text-center">Work Experience.</h1>
+      <div className="title my-5">Work Experience.</div>
       <VerticalTimeline>
         <VerticalTimelineElement
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff'}}

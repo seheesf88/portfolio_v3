@@ -1,39 +1,39 @@
-import React, { Component } from 'react';
-import './Contact.css';
+import React from 'react';
+import { InlineWidget } from "react-calendly";
+import './Contacts.scss';
 
-class Contacts extends Component{
-  constructor(){
-    super()
+const Contacts = () => {
+  return (
+    <div className="contacts container">
+      <h1>Contacts.</h1>
 
-  }
+      <div className="contacts__body">
+        <div className="contacts__calendly">
+          <InlineWidget
+            url="https://calendly.com/seheesf88"
+            pageSettings={{
+              hideEventTypeDetails: true
+            }}
+          />
+        </div>
 
-  render(){
-    return(
-      <div className="contact-main">
-        <h1>Contact.</h1>
-        <div className="contact-container">
-          <div className="avatar">
-            <img id="avatar" src="./connect.jpg" />
+        <div className="contacts__info">
+          <div className="contacts__info-basic">
+            <div id="contact-name">SeHee</div>
+            <div>San Francisco, CA</div>
+            <div>seheesf88@gmail.com</div>
+            <div>Find me on..</div>
           </div>
-          <div className="avatar-discription">
-            <div className="contact-intro">
-              <div id="contact-name">SeHee</div>
-              <div className="contact-address">San Francisco, CA</div>
-              <div className="contact-address">seheesf88@gmail.com</div>
-              <div className="contact-address" id="findmeon">Find me on..</div>
-            </div>
-            <div className="contact-info">
-              <span className="contact-link"><a href="mailto:seheesf88@gmail.com"><img className="contact" src="./email.png" /></a></span>
-              <span className="contact-link"><a href="https://www.linkedin.com/in/sehee-son/"><img className="contact" src="./linkedin-logo.png" /></a></span>
-              <span className="contact-link"><a href="https://github.com/seheesf88"><img className="contact" src="./github.png" /></a></span>
-              <span className="contact-link"><a href="../SeHee_Son_resume.pdf" download><img className="contact" src="./download.png" /></a></span>
-
-            </div>
+          <div className="contacts__links">
+            <span className="contacts__links-link"><a href="mailto:seheesf88@gmail.com"><img className="contacts__link-icon" src="./email.png" /></a></span>
+            <span className="contacts__links-link"><a href="https://www.linkedin.com/in/sehee-son/"><img className="contacts__link-icon" src="./linkedin-logo.png" /></a></span>
+            <span className="contacts__links-link"><a href="https://github.com/seheesf88"><img className="contacts__link-icon" src="./github.png" /></a></span>
+            <span className="contacts__links-link"><a href="../SeHee_Son_resume.pdf" download><img className="contacts__link-icon" src="./download.png" /></a></span>
           </div>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Contacts

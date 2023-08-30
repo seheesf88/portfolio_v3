@@ -16,3 +16,14 @@ code {
 * {
   font-family: 'Montserrat', sans-serif;
 }
+
+
+.title {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 40px;
+  font-weight: 700;
+}

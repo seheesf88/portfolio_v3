@@ -1,68 +1,46 @@
-.contacts {  
+.contacts {
+  color: #fff;
+
   &__body {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 
-    @media screen and (max-width: 962px) {
+    @media only screen and (max-width: 768px) {
+      display: flex;
       flex-direction: column-reverse;
     }
   }
 
-  &__calendly {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+
+  &__content-subtitle {
+    font-size: 35px;
+  }
+
+  &__content-links {
+    display: flex;
+  }
+
+  &__content-link {
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 24px;
-    border-radius: 15px;
-    border: 1px solid #093145;
-    padding: 8px;
+    margin-right: 18px;
+    border: 1px solid white;
   }
 
-  &__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 24px;
+  &__content-link:hover {
+    cursor: pointer;
   }
 
-  &__info-basic {
-    font-size: 20px;
-    margin-bottom: 25px;
-
-    #contact-name {
-      font-size: 40px;
-      margin-top: 30px;
-      margin-bottom: 40px;
-    }
-
-    div {
-      margin-bottom: 8px;
-    }
-  }
-
-  &__link-icon {
+  &__content-link-icon {
     height: 30px;
     width: 30px;
-  }
-
-  &__links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__links-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 6px;
-    -moz-box-shadow:    2px 2px 3px 4px #ccc;
-    -webkit-box-shadow: 2px 2px 3px 4px #ccc;
-    box-shadow:         2px 2px 3px 4px #ccc;
   }
 }

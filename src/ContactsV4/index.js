@@ -4,11 +4,10 @@ import './ContactsV4.scss';
 
 const ContactsV4 = () => {
   return (
-    <div className="contacts container">
-      <h1>Contacts.</h1>
-
+    <div className="contacts">
+      <h1 className="title my-5">Contact.</h1>
       <div className="contacts__body">
-        <div className="contacts__calendly">
+        <div className="mx-5">
           <InlineWidget
             url="https://calendly.com/seheesf88"
             pageSettings={{
@@ -17,18 +16,15 @@ const ContactsV4 = () => {
           />
         </div>
 
-        <div className="contacts__info">
-          <div className="contacts__info-basic">
-            <div id="contact-name">SeHee</div>
-            <div>San Francisco, CA</div>
-            <div>seheesf88@gmail.com</div>
-            <div>Find me on..</div>
-          </div>
-          <div className="contacts__links">
-            <span className="contacts__links-link"><a href="mailto:seheesf88@gmail.com"><img className="contacts__link-icon" src="./email.png" /></a></span>
-            <span className="contacts__links-link"><a href="https://www.linkedin.com/in/sehee-son/"><img className="contacts__link-icon" src="./linkedin-logo.png" /></a></span>
-            <span className="contacts__links-link"><a href="https://github.com/seheesf88"><img className="contacts__link-icon" src="./github.png" /></a></span>
-            <span className="contacts__links-link"><a href="../SeHee_Son_resume.pdf" download><img className="contacts__link-icon" src="./download.png" /></a></span>
+        <div className="contacts__content mx-5 px-5 px-md-0 mb-5 mb-md-0">
+          <div className="contacts__content-subtitle">SeHee Son.</div>
+          <div>San Francisco, CA</div>
+          <div>seheesf88@gmail.com</div>
+          <div className="contacts__content-links mt-4">
+            <span className="contacts__content-link"><a href="mailto:seheesf88@gmail.com"><img className="contacts__content-link-icon" src="./icons/email.svg" /></a></span>
+            <span className="contacts__content-link"><a href="https://www.linkedin.com/in/sehee-son/"><img className="contacts__content-link-icon" src="./icons/linkedin.svg" /></a></span>
+            <span className="contacts__content-link"><a href="https://github.com/seheesf88"><img className="contacts__content-link-icon" src="./icons/github.svg" /></a></span>
+            <span className="contacts__content-link"><a href="../SeHee_Son_resume.pdf" download><img className="contacts__content-link-icon" src="./icons/download.svg" /></a></span>
           </div>
         </div>
       </div>
