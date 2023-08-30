@@ -40,7 +40,7 @@ class Skills extends Component{
 
     return(
       <div className="skills">
-        <div className="title my-5">Skills.</div>
+        <div className="h1 text-center my-5">Skills.</div>
         <div className="skills__languages mt-3 my-md-5">
           <div className="skills__languages-sets">
             <div className="skills__languages-sets-item wow slideInLeft"

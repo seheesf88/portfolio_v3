@@ -233,9 +233,9 @@ const Home = () => {
   let contact_pg = {factor: 1, offset: 6}
 
 
-  //360 * 640 ~ 414×896
-  //601×962 ~ 1280×800
-  //1280 * 720 ~ 1920*1080
+  //360x640 ~ 414×896
+  //601x962 ~ 1280x800
+  //1280x720 ~ 1920x1080
   const screenRatio = {
     sm: {
       intro_pg: { factor: "1", offset: "0"},
@@ -260,6 +260,63 @@ const Home = () => {
     }
   }
 
+  const TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+
+  TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+    var that = this;
+    var delta = 300 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
+
+  window.onload = function() {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.body.appendChild(css);
+  };
+
 
   return (
     <div className="home">
@@ -273,17 +330,24 @@ const Home = () => {
           factor="1"
           offset="0"
           speed="0.9"
-          className="home__greeting px-5 px-md-0 mt-5"
-          onClick={() => ref.current.scrollTo(6)}
+          className="home__greeting-intro px-1 px-md-5 py-5"
         >
-          <div>Hi, I am SeHee!</div>
+          <div className="mx-2">Hi,  </div>
+          <div className="home_greeting-content">
+            <span className="mx-2">I am</span>
+            <span
+              className="txt-rotate"
+              data-period="2000"
+              data-rotate='[ "SeHee.", "a Software Engineer.", "a Front end engineer.", "a Problem Solver.", "a Team Player." ]'>
+            </span>
+          </div>
         </ParallaxLayer>
         
         <ParallaxLayer
           factor="1"
           offset="0"
-          speed="0.00000001"
-          className="home__sehee-main yo"
+          speed="0.1"
+          className="home__sehee-main"
         >
           <img src={sehee} className="home__sehee" />
         </ParallaxLayer>
@@ -292,7 +356,7 @@ const Home = () => {
           factor="1"
           offset="0"
           speed="1.8"
-          className="home__yam-container ya"
+          className="home__yam-container"
         >
           <img src={yam} className="home__yam" />
         </ParallaxLayer>
@@ -337,21 +401,37 @@ const Home = () => {
           factor="1"
           offset="0.99"
           speed="0.5"
-          style={{ display: "flex", flexDirection: "column", alignItems: "center"}}
-          onClick={() => ref.current.scrollTo(6)}
+          className="home__intro-message"
+          onClick={() => ref.current.scrollTo(4)}
         >
-          <div style={{ fontSize: "60px", fontWeight: "800"}}>I am a software engineer</div>
+          <div className="home__intro-message-title">I am a software engineer</div>
+          <div className="home__intro-message-subtitle px-1 px-md-5 mx-1 mx-md-5">with diverse background in createing innovation solution for web application. </div>
         </ParallaxLayer>
 
         <ParallaxLayer
           factor="1"
-          offset="1.000001"
-          speed="3"
-          className="home__greeting px-5 px-md-0 mt-5"
-          onClick={() => ref.current.scrollTo(6)}
+          offset="1.7"
+          onClick={() => ref.current.scrollTo(5)}
+          className="home__intro-message"
         >
-          <div style={{ fontSize: "40px", fontWeight: "800", textAlign: "center"}}>with diverse background in createing innovation solution for web application. </div>
+          <div className="home__intro-message-title">I am a software engineer</div>
+          <div className="home__intro-message-subtitle px-1 px-md-5 mx-1 mx-md-5">
+            with a passion for continuous learning, eagerly embracing new technologies and collaborating seamlessly with diverse teams to create user-centric applications
+          </div>
         </ParallaxLayer>
+
+        <ParallaxLayer
+          factor="1"
+          offset="1"
+          speed="1"
+          onClick={() => ref.current.scrollTo(3)}
+          className="home__intro-message"
+        >
+          <div className="home__intro-message-title">I am a software engineer</div>
+          <div className="home__intro-message-subtitle px-1 px-md-5 mx-1 mx-md-5">
+            who excels at solving challenging problems by writing precise code and using analytical thinking, ensuring each detail strengthens robust solutions.
+          </div>        
+          </ParallaxLayer>
         
 
         <ParallaxLayer factor={skills_pg.factor} offset={skills_pg.offset} className="home__skills-container">

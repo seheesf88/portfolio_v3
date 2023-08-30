@@ -5,7 +5,7 @@ import './ContactsV4.scss';
 const ContactsV4 = () => {
   return (
     <div className="contacts">
-      <h1 className="title my-5">Contact.</h1>
+      <div className="h1 text-center my-5">Contact.</div>
       <div className="contacts__body">
         <div className="mx-5">
           <InlineWidget
@@ -16,7 +16,7 @@ const ContactsV4 = () => {
           />
         </div>
 
-        <div className="contacts__content mx-5 px-5 px-md-0 mb-5 mb-md-0">
+        <div className="contacts__content mx-5 px-5 px-md-0 mb-5 mb-md-5">
           <div className="contacts__content-subtitle">SeHee Son.</div>
           <div>San Francisco, CA</div>
           <div>seheesf88@gmail.com</div>
