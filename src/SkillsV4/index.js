@@ -19,7 +19,7 @@ class Skills extends Component{
       {
         img: "./book.png",
         title : "Frameworks & Libraries",
-        list : ["React.js + Redux", "Vue.js + Vuex", "Node.js", "Flask", "Django", "Axios", "Express.js", "Bootstraps", "Vuetify"]
+        list : ["React.js + Redux", "Vue.js + Vuex", "Node.js + Express.js", "Flask", "Django", "Axios", "Sass", "Bootstraps", "Vuetify"]
       },
       {
         img: "./database.png",
@@ -29,7 +29,7 @@ class Skills extends Component{
       {
         img: "./idea.png",
         title : "Management & Tools",
-        list : ["Agile scrum methodology", "Jira", "Notion", "Figma", "Github(Git controls)", "Jenkins(ci/cd)"]
+        list : ["Agile scrum methodology", "Jira", "Notion", "Figma", "Github(Git controls)", "Bitbucket", "Jenkins(ci/cd)", "Graylog"]
       },
       {
         img: "./skill.png",
@@ -77,7 +77,7 @@ class Skills extends Component{
             </div>
           </div>
         </div>
-        <div className="skills__items mt-md-5 pt-5">
+        <div className="skills__items mt-3 mt-md-0">
           {
             skills.map((set, idx) => {
               return (
@@ -85,20 +85,18 @@ class Skills extends Component{
                   <div className="skills__items-sets-img">
                     <img src={set.img} />
                   </div>
-                  <div className="skills__items-sets-content w-100">
-                    <div className="skills__items-sets-title mt-5">{set.title}</div>
-                    <ul className="skills__items-sets-list mt-md-5">
-                      {
-                        set.list.map((item, idx) => {
-                          return (
-                            <li key={idx} className="py-1">
-                              <img className="bullet mr-3" src="./bullet.png" />{item}
-                            </li>
-                          )
-                        })
-                      }
-                    </ul>
-                  </div>
+                  <div className="skills__items-sets-title mt-2">{set.title}</div>
+                  <ul className="skills__items-sets-content">
+                    {
+                      set.list.map((item, idx) => {
+                        return (
+                          <li key={idx} className="py-1">
+                            <img className="bullet mr-3" src="./bullet.png" />{item}
+                          </li>
+                        )
+                      })
+                    }
+                  </ul>
                 </div>
               ) 
             })
