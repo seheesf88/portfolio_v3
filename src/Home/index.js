@@ -1,10 +1,8 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef } from 'react'
 import './Home.scss';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import Skills from '../SkillsV4';
-import Projects from '../ProjectsV4';
-import Experience from '../Experience';
 import ContactsV4 from '../ContactsV4';
+
 
 const Home = () => {
   const ref = useRef()
@@ -21,13 +19,7 @@ const Home = () => {
   const greenbanc = './icons/greenbanc.svg';
 
   //default settings
-  let fullPg = 7
-  let intro_pg = { factor: "1", offset: "1"}
-  let skills_pg = { factor: "1", offset: "2"}
-  let experience_pg = { factor: "2", offset: "3"}
-  let project_pg = {factor: 1, offset: 5}
-  let contact_pg = {factor: 1, offset: 6}
-
+  let fullPg = 5
 
   //360x640 ~ 414×896
   //601x962 ~ 1280x800
@@ -126,19 +118,33 @@ const Home = () => {
           factor="1"
           offset="0"
           speed="0.9"
-          className="home__greeting-intro px-1 px-md-5 py-5"
+          sticky={{start: "0", end: "4"}}
+          className="home__frame"
         >
-          <div className="mx-2 home__greeting-content-hi">Hi,  </div>
-          <div className="home__greeting-content">
-            <span className="mx-2">I am</span>
-            <span
-              className="txt-rotate here"
-              data-period="2000"
-              data-rotate='[ "SeHee.", "a Software Engineer.", "a Front end engineer.", "a Problem Solver.", "a Team Player." ]'>
-            </span>
+          <div className="home__frame-box">
+
           </div>
         </ParallaxLayer>
-        
+
+        <ParallaxLayer
+          factor="1"
+          offset="0.1"
+          speed="1"
+          className="home__greeting-intro"
+        >
+          <div className="home__greeting-msg">
+            <div className="home__greeting-content-hi">Hi,  </div>
+            <div className="home__greeting-content">
+              <span className="abbr">I am</span>
+              <span
+                className="txt-rotate"
+                data-period="2000"
+                data-rotate='[ "SeHee.", "a Software Engineer.", "a Front end engineer.", "a Problem Solver.", "a Team Player." ]'>
+              </span>
+            </div>
+          </div>
+        </ParallaxLayer>
+
         <ParallaxLayer
           factor="1"
           offset="0"
@@ -148,10 +154,98 @@ const Home = () => {
           <img src={sehee} className="home__sehee" />
         </ParallaxLayer>
 
+
         <ParallaxLayer
           factor="1"
           offset="0"
-          speed="1.8"
+          sticky={{start: "3", end: "5"}}
+          speed="0.1"
+          className="home__sehee-main"
+        >
+          <img src={sehee} className="home__sehee" />
+        </ParallaxLayer>
+
+
+        {/* <ParallaxLayer
+          factor="1"
+          className='home__greeting-arrow'
+        >
+          <div className="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </ParallaxLayer> */}
+
+        <ParallaxLayer
+          factor="1"
+          offset="0.9"
+          className="home__intro-message-container"
+          onClick={() => ref.current.scrollTo(4)}
+        >
+          <div className="home__intro-message">
+            <div className="home__intro-message-title">I am a software engineer</div>
+            <div className="home__intro-message-subtitle px-1 px-md-5 mx-1 mx-md-5">
+              with diverse background in createing innovation solution for web application.
+            </div>
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          factor="1"
+          offset="1.9"
+          speed="0.7"
+          onClick={() => ref.current.scrollTo(3)}
+          className="home__intro-message-container"
+        >
+          <div className="home__intro-message">
+            <div className="home__intro-message-title">I am a software engineer</div>
+            <div className="home__intro-message-subtitle px-1 px-md-5 mx-1 mx-md-5">
+              who excels at solving challenging problems by writing precise code and using analytical thinking, ensuring each detail strengthens robust solutions.
+            </div>        
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          factor="1"
+          offset="2.6"
+          speed="1.2"
+          onClick={() => ref.current.scrollTo(5)}
+          className="home__intro-message-container"
+        >
+          <div className="home__intro-message">
+            <div className="home__intro-message-title">I am a software engineer</div>
+            <div className="home__intro-message-subtitle px-1 px-md-5 mx-1 mx-md-5">
+              with a passion for continuous learning, eagerly embracing new technologies and collaborating seamlessly with diverse teams to create user-centric applications
+            </div>
+          </div>
+        </ParallaxLayer>
+
+
+        <ParallaxLayer offset="1" speed="0.2" style={{ opacity: 0.2 }}>
+          <img src={mvcode} style={{ display: 'block', width: '8%', marginLeft: '10%' }} />
+          <img src={greenbanc} style={{ display: 'block', width: '12%', marginLeft: '75%' }} />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset="1.2" speed="0.8" style={{ opacity: 0.4 }}>
+          <img src={reeske} style={{ display: 'block', width: '10%', marginLeft: '60%' }} />
+          <img src={ixlayer} style={{ display: 'block', width: '15%', marginLeft: '30%' }} />
+          <img src={reeske} style={{ display: 'block', width: '4%', marginLeft: '80%' }} />
+          <img src={mvcode} style={{ display: 'block', width: '8%', marginLeft: '90%' }} />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset="1.3" speed="0.4" style={{ opacity: 0.6 }}>
+          <img src={ixlayer} style={{ display: 'block', width: '5%', marginLeft: '75%' }} />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset="1.4" speed="1" style={{ opacity: 0.1 }}>
+          <img src={ixlayer} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
+          <img src={greenbanc} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          factor="1"
+          offset="4"
           className="home__yam-container"
         >
           <img src={yam} className="home__yam" />
@@ -159,22 +253,19 @@ const Home = () => {
 
         <ParallaxLayer
           factor="1"
-          offset="0"
+          offset="4"
           speed="1.5"
+          sticky={{start: "4", end: "5"}}
           className="home__desk-container"
         >
-          <div className="arrow">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
           <img src={desk} style={{ width: "80%"}}/>
         </ParallaxLayer>
 
         <ParallaxLayer
           factor="1"
-          offset="0"
+          offset="4"
           speed="2"
+          sticky={{start: "4", end: "5"}}
           className="home__keyboard-container"
         >
           <img src={keyboard} className="home__keyboard"/>
@@ -182,8 +273,9 @@ const Home = () => {
 
         <ParallaxLayer
           factor="1"
-          offset="0"
+          offset="4"
           speed="2.4"
+          sticky={{start: "3.5", end: "5"}}
           className="home__coffee-container"
         >
           <img src={coffee} style={{ width: "8%", marginLeft:"20%", marginBottom: "5%"}}/>
@@ -191,102 +283,12 @@ const Home = () => {
 
         <ParallaxLayer
           factor="1"
-          offset="0"
+          offset="4"
           speed="2.1"
+          sticky={{start: "3.2", end: "5"}}
           className="home__mango-container"
         >
           <img src={mango} className="home__mango" />
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          factor="1"
-          offset="0.99"
-          speed="0.5"
-          className="home__intro-message"
-          onClick={() => ref.current.scrollTo(4)}
-        >
-          <div className="home__intro-message-title">I am a software engineer</div>
-          <div className="home__intro-message-subtitle px-1 px-md-5 mx-1 mx-md-5">with diverse background in createing innovation solution for web application. </div>
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          factor="1"
-          offset="1"
-          speed="1.5"
-          onClick={() => ref.current.scrollTo(5)}
-          style={{ display: "flex", justifyContent: "flex-end"}}
-          className="home__intro-message"
-        >
-          <div className="home__intro-message-title">I am a software engineer</div>
-          <div className="home__intro-message-subtitle px-1 px-md-5 mx-1 mx-md-5">
-            with a passion for continuous learning, eagerly embracing new technologies and collaborating seamlessly with diverse teams to create user-centric applications
-          </div>
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          factor="1"
-          offset="1"
-          speed="1"
-          onClick={() => ref.current.scrollTo(3)}
-          className="home__intro-message"
-        >
-          <div className="home__intro-message-title">I am a software engineer</div>
-          <div className="home__intro-message-subtitle px-1 px-md-5 mx-1 mx-md-5">
-            who excels at solving challenging problems by writing precise code and using analytical thinking, ensuring each detail strengthens robust solutions.
-          </div>        
-          </ParallaxLayer>
-        
-
-        <ParallaxLayer factor={skills_pg.factor} offset={skills_pg.offset} className="home__skills-container">
-          <Skills />
-        </ParallaxLayer>
-
-        <ParallaxLayer factor={experience_pg.factor} offset={experience_pg.offset} className="home__experience__container">
-          <Experience />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset="3.8" speed="0.2" style={{ opacity: 0.2 }}>
-          <img src={mvcode} style={{ display: 'block', width: '8%', marginLeft: '10%' }} />
-          <img src={greenbanc} style={{ display: 'block', width: '12%', marginLeft: '75%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset="4.2" speed="-0.1" style={{ opacity: 0.4 }}>
-          <img src={reeske} style={{ display: 'block', width: '10%', marginLeft: '60%' }} />
-          <img src={ixlayer} style={{ display: 'block', width: '15%', marginLeft: '30%' }} />
-          <img src={reeske} style={{ display: 'block', width: '4%', marginLeft: '80%' }} />
-          <img src={mvcode} style={{ display: 'block', width: '8%', marginLeft: '90%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset="3.7" speed="0.4" style={{ opacity: 0.6 }}>
-          <img src={ixlayer} style={{ display: 'block', width: '5%', marginLeft: '75%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset="3" speed="0.8" style={{ opacity: 0.1 }}>
-          <img src={ixlayer} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
-          <img src={greenbanc} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer factor={project_pg.factor} offset={project_pg.offset} className="home__projects__container">
-          <Projects />
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          factor={contact_pg.factor}
-          offset={contact_pg.offset}
-          speed="0.7"
-          className="home__contact-container"
-        >
-          <ContactsV4 />
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          factor="0.5"
-          offset="6.5"
-          speed="3"
-          className="home__sehee-container"
-        >
-          <img src={yam} style={{ width: "10%"}} onClick={() => ref.current.scrollTo(2)}/>
-          <img src={sehee} style={{ width: "20%"}} onClick={() => ref.current.scrollTo(1)}/>
         </ParallaxLayer>
       </Parallax>
     </div>

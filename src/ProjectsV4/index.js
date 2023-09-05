@@ -25,11 +25,11 @@ class Projects extends Component{
           "Input a stock symbol and specify the desired number of days to generate a historical price chart.",
           "Ideal for investors, curious individuals, and those interested in tracking stock trends, offering an easy and informative way to explore stock market data."
         ]
-      },
+      }
     ]
     return(
       <div class="projects">
-        <div className="h1 text-center my-5">Projects.</div>
+        <div className="h1 text-center pt-5">Projects.</div>
         <div className="projects__project-container my-5">
           { 
             projectData.map((project, idx) => {
