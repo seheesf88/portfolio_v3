@@ -15,7 +15,19 @@ class Projects extends Component{
   render(){
     const projectData = [
       {
-        title: "The Chart app",
+        title: "Tom Riddle's Diary Chat App",
+        img: "./img/magicDiary.png",
+        githubLink: "https://github.com/seheesf88/magic-diary-chat",
+        deployURl: "https://seheesf88.github.io/magic-diary-chat/",
+        techStack: ["JavaScript", "Vue.js", "Sass", "bootstrap", "Node.js", "Express.js", "openai - fine-tunning"], 
+        description: [
+          "Tom Riddle's Diary is a unique and immersive chat application inspired by the character Tom Riddle from the Harry Potter series, specifically from Harry Potter and the Chamber of Secrets.",
+          "This chat app features a chatbot named Tom Riddle, who is known for his cold and arrogant demeanor.",
+          "Tom is trained to respond using magical world vocabularies and may show little interest in the non-magical world (also known as the muggle world)."
+        ]
+      },
+      {
+        title: "The Stock Chart app",
         img: "./img/chartApp.png",
         githubLink: "https://github.com/seheesf88/the-chart-app",
         deployURl: "https://seheesf88.github.io/the-chart-app/",
@@ -26,34 +38,33 @@ class Projects extends Component{
           "Ideal for investors, curious individuals, and those interested in tracking stock trends, offering an easy and informative way to explore stock market data."
         ]
       }
+
     ]
     return(
       <div class="projects">
         <div className="h1 text-center pt-5">Projects.</div>
-        <div className="projects__project-container my-5">
+        <div className="projects__project-container mt-5">
           { 
             projectData.map((project, idx) => {
               return (
-                <div 
-                  className="projects__project-panel mx-2 px-4"
-                >
+              <div 
+                className="projects__project-panel mx-2 px-4"
+              >
                 <div className="projects__project-img-container">
-                  <a href={project.githubLink}>
-                    <img src={project.img} className="projects__project-img"/>
-                  </a>
+                  <img src={project.img} className="projects__project-img"/>
                 </div>
                 <div className="projects__project-content py-5">
-                  <div className="projects__project-title text-center mb-3">{project.title}</div>
-                  <div className="projects__project-tech text-center">
+                  <div className="projects__project-title text-center">{project.title}</div>
+                  <div className="projects__project-tech text-center mt-3">
                     {
                       project.techStack.map((tech, idx) => {
                         if (idx !== project.techStack.length - 1) {
                           return (
-                            <span><span className="projects__project-tech-stack">{tech}</span><span className="mx-2">+</span></span>
+                            <span className="my-2"><span className="projects__project-tech-stack">{tech}</span><span className="mx-2">+</span></span>
                           )
                         } else {
                           return (
-                            <span><span className="projects__project-tech-stack">{tech}</span></span>
+                            <span className="my-2"><span className="projects__project-tech-stack">{tech}</span></span>
                           )
                         }
                       })

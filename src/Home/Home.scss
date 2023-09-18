@@ -17,6 +17,27 @@
     height: 100%;
   }
 
+  &__frame-light-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 1%;
+
+    div {
+      font-size: 24px;
+    }
+  }
+
+  &__frame-light {
+    width: 30px;
+    height: 30px;
+    border: 1px solid green;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 6px;
+  }
+
   &__greeting-intro {
     display: flex;
     justify-content: center;
@@ -50,41 +71,46 @@
     }
   }
 
-  &__greeting-arrow {
-    display: flex;
-  }
-
   &__intro-message-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    // justify-content: flex-end;
     align-items: flex-start;
+    border: 1px solid red;
   }
 
   &__intro-message {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    // align-items: center;
+    width: 40%;
   }
 
-  &__intro-message-title {
-    font-size: 60px;
+  // &__intro-message-title {
+  //   font-size: 60px;
 
-    @media only screen and (max-width: 768px) {
-      font-size: 30px;
-    }
+  //   @media only screen and (max-width: 768px) {
+  //     font-size: 30px;
+  //   }
+  // }
+
+  // &__intro-message-subtitle {
+  //   font-size: 35px;
+  //   text-align: center;
+
+  //   @media only screen and (max-width: 768px) {
+  //     font-size: 20px;
+  //   }
+  // }
+
+  &__sehee-front {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
   }
 
-  &__intro-message-subtitle {
-    font-size: 35px;
-    text-align: center;
-
-    @media only screen and (max-width: 768px) {
-      font-size: 20px;
-    }
-  }
-
-  &__sehee-main {
+  &__sehee-back {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -114,7 +140,7 @@
   &__yam-container {
     display: flex;
     align-items: flex-end;
-    z-index: 30;
+    // z-index: 30;
   }
 
   &__yam {

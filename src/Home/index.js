@@ -116,18 +116,6 @@ const Home = () => {
 
         <ParallaxLayer
           factor="1"
-          offset="0"
-          speed="0.9"
-          sticky={{start: "0", end: "4"}}
-          className="home__frame"
-        >
-          <div className="home__frame-box">
-
-          </div>
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          factor="1"
           offset="0.1"
           speed="1"
           className="home__greeting-intro"
@@ -145,31 +133,13 @@ const Home = () => {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer
-          factor="1"
-          offset="0"
-          speed="0.1"
-          className="home__sehee-main"
-        >
-          <img src={sehee} className="home__sehee" />
-        </ParallaxLayer>
-
-
-        <ParallaxLayer
-          factor="1"
-          offset="0"
-          sticky={{start: "3", end: "5"}}
-          speed="0.1"
-          className="home__sehee-main"
-        >
-          <img src={sehee} className="home__sehee" />
-        </ParallaxLayer>
-
-
         {/* <ParallaxLayer
           factor="1"
-          className='home__greeting-arrow'
+          offset="0"
+          speed="0.1"
+          className="home__sehee-front"
         >
+          <img src={sehee} className="home__sehee" />
           <div className="arrow">
             <span></span>
             <span></span>
@@ -179,7 +149,17 @@ const Home = () => {
 
         <ParallaxLayer
           factor="1"
-          offset="0.9"
+          offset="0"
+          sticky={{start: "0", end: "5"}}
+          speed="0.1"
+          className="home__sehee-back"
+        >
+          <img src={sehee} className="home__sehee" />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          factor="1"
+          offset="1"
           className="home__intro-message-container"
           onClick={() => ref.current.scrollTo(4)}
         >
@@ -210,7 +190,7 @@ const Home = () => {
           factor="1"
           offset="2.6"
           speed="1.2"
-          onClick={() => ref.current.scrollTo(5)}
+          onClick={() => ref.current.scrollTo(4)}
           className="home__intro-message-container"
         >
           <div className="home__intro-message">
@@ -221,30 +201,7 @@ const Home = () => {
           </div>
         </ParallaxLayer>
 
-
-        <ParallaxLayer offset="1" speed="0.2" style={{ opacity: 0.2 }}>
-          <img src={mvcode} style={{ display: 'block', width: '8%', marginLeft: '10%' }} />
-          <img src={greenbanc} style={{ display: 'block', width: '12%', marginLeft: '75%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset="1.2" speed="0.8" style={{ opacity: 0.4 }}>
-          <img src={reeske} style={{ display: 'block', width: '10%', marginLeft: '60%' }} />
-          <img src={ixlayer} style={{ display: 'block', width: '15%', marginLeft: '30%' }} />
-          <img src={reeske} style={{ display: 'block', width: '4%', marginLeft: '80%' }} />
-          <img src={mvcode} style={{ display: 'block', width: '8%', marginLeft: '90%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset="1.3" speed="0.4" style={{ opacity: 0.6 }}>
-          <img src={ixlayer} style={{ display: 'block', width: '5%', marginLeft: '75%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset="1.4" speed="1" style={{ opacity: 0.1 }}>
-          <img src={ixlayer} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
-          <img src={greenbanc} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
-        </ParallaxLayer>
-
         <ParallaxLayer
-          factor="1"
           offset="4"
           className="home__yam-container"
         >

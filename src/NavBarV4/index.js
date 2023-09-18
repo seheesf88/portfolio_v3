@@ -6,26 +6,18 @@ const NavBar = () => {
   const btns = [
     {
       text: "Skills",
-      icon: "./icons/phone.svg",
-      alt: "phone",
       path: "/skills"
     },
     {
-      text: "Project",
-      icon: "./icons/phone.svg",
-      alt: "phone",
+      text: "Projects",
       path: "/projects"
     },
     {
       text: "Experience",
-      icon: "./icons/phone.svg",
-      alt: "phone",
       path: "/experience"
     },
     {
       text: "Contacts",
-      icon: "./icons/phone.svg",
-      alt: "phone",
       path: "/contacts"
     }
   ];

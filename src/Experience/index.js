@@ -17,8 +17,8 @@ const Experience = () => {
       <div className="h1 text-center">Work Experience.</div>
       <VerticalTimeline>
         <VerticalTimelineElement
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff'}}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          // contentStyle={{ background: 'rgb(33, 150, 243)', color: '#000'}}
+          // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
           date="March 2021 - July 2023"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={
@@ -32,15 +32,20 @@ const Experience = () => {
           }
         >
           <h5>
-            <a href="https://ixlayer.com/who-we-are/" className="experience__company-title">
-              Ixlayer
-            </a>
+            Ixlayer
           </h5>
           <h4>Front end Engineer <span className="px-1"> | </span>Vue Developer</h4>
           <h6>San Francisco, CA | Remote</h6>
           <p className="my-2 px-2">
             I played a pivotal role in developing and enhancing a fully customized COVID testing platform, crucial during the pandemic's peak, serving healthcare providers and users with features such as home testing, while also extending to other products like STI and vitamin D testing, contributing to over 3 million COVID tests, and actively collaborating with cross-functional teams, UX/UI designers, and QA to ensure seamless user experiences, code quality, and bug-free functionality.
           </p>
+          <div style={{fontWeight: "600"}}>Tech stacks:</div>
+          <ul>
+            <li>JavaScript, Vue.js, Vuex, Bootstraps, Vuetify, SASS</li>
+            <li>Python, Django, PostgreSQL</li>
+            <li>Git controls, Github, Jenkins, Graylog, Figma</li>
+            <li>Agile Methodologies:  Notion, Jira</li>
+          </ul>
           {/* <img src={ap} style={{ width: '100%'}} /> */}
         </VerticalTimelineElement>
 
@@ -63,6 +68,11 @@ const Experience = () => {
           <p className="my-2 px-2">
             I architected the front-end of the insurance platform using React.js, collaborating with design and backend teams for a seamless user interface; I also designed interactive functionalities allowing users to choose insurance packages based on their needs, following best practices like responsive design for an optimal, smooth user experience.
           </p>
+          <div style={{fontWeight: "600"}}>Tech stacks:</div>
+          <ul>
+            <li>JavaScript, React.js, Bootstraps, Material UI, CSS</li>
+            <li>Githubs, Git controls, Figma</li>
+          </ul>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -84,6 +94,12 @@ const Experience = () => {
           <p className="my-2 px-2">
             I led a team of five as the founding engineer to develop a React.js-based digital roadmap app for estimating potential savings in transitioning to electric energy homes; I also created a feature enabling virtual energy assessments through uploaded photos and streamlined admin dashboard, saving 8+ hours daily, while guiding tech stack choices (MERN), conducting code reviews, and contributing to system design.
           </p>
+          <div style={{fontWeight: "600"}}>Tech stacks:</div>
+          <ul>
+            <li>JavaScript, React.js, Redux, MongoDB, Express.js, Node.js</li>
+            <li>Bootstraps, Material UI, HTML, CSS</li>
+            <li>Bitbucket, Git controls, Trello, Figma</li>
+          </ul>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -105,6 +121,10 @@ const Experience = () => {
           <p className="my-2 px-2">
             I introduced a structured K12 Computer Science curriculum, teaching coding and topics like Unity, Robotics, JavaScript, HTML/CSS, Python, and Algorithm & Data Structure, inspiring a lasting coding interest among 70+ students weekly; I led daily classes for 20+ students, crafting tailored lesson plans to stimulate learning, evaluating code, and offering personalized debugging consultations post-classes.
           </p>
+          <div style={{fontWeight: "600"}}>Tech stacks:</div>
+          <ul>
+            <li>Progress.js, Scratch, Unity, Minecraft</li>
+          </ul>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
