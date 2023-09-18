@@ -1,11 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
 
-import Nav from './Nav';
-import MainPage from './MainPage';
-import Skills from './Skills';
-import Contacts from './Contacts';
-
 import NavBarV4 from './NavBarV4';
 import Home from './Home';
 import SkillsV4 from './SkillsV4';
@@ -17,15 +12,13 @@ const App = () => {
   const v4 = true;
   return (
     <main>
-      { 
-        v4 ? <NavBarV4 /> : <Nav />
-      }
+      <NavBarV4 />
       <Switch>
-        <Route exact path='/' component = { v4 ? Home : MainPage } />
-        <Route exact path='/skills' component = { v4 ?  SkillsV4 : Skills } />
-        <Route exact path='/experience' component = { v4 ? Experience : <></> } />
+        <Route exact path='/' component = { Home } />
+        <Route exact path='/skills' component = { SkillsV4 } />
+        <Route exact path='/experience' component = { Experience } />
         <Route exact path='/projects' component = { ProjectsV4 } />
-        <Route exact path='/contacts' component = { v4 ? ContactsV4 : Contacts } />
+        <Route exact path='/contacts' component = { ContactsV4 } />
       </Switch>
     </main>
   );

@@ -3,10 +3,6 @@ import './Projects.scss';
 import WOW from "wowjs";
 
 class Projects extends Component{
-  constructor(){
-    super();
-  };
-
   componentDidMount() {
     const wow = new WOW.WOW();
     wow.init();
@@ -51,7 +47,7 @@ class Projects extends Component{
                 className="projects__project-panel mx-2 px-4"
               >
                 <div className="projects__project-img-container">
-                  <img src={project.img} className="projects__project-img"/>
+                  <img src={project.img} alt="project image" className="projects__project-img"/>
                 </div>
                 <div className="projects__project-content py-5">
                   <div className="projects__project-title text-center">{project.title}</div>

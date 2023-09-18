@@ -8,9 +8,6 @@ const mvcode = './icons/mvcode.png';
 const reeske = './icons/reeske.svg';
 const greenbanc = './icons/greenbanc.svg';
 
-const ap = './gif/ap.gif';
-
-
 const Experience = () => {
   return(
     <div className="experience py-5">

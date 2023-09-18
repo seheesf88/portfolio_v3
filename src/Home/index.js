@@ -13,10 +13,6 @@ const Home = () => {
   const desk = './img/desk.svg';
   const keyboard = './img/keyboard.svg';
   const coffee = './img/coffee.svg';
-  const ixlayer = './icons/ixlayer.png';
-  const mvcode = './icons/mvcode.png';
-  const reeske = './icons/reeske.svg';
-  const greenbanc = './icons/greenbanc.svg';
 
   //default settings
   let fullPg = 5

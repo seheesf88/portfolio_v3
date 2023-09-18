@@ -4,11 +4,6 @@ import WOW from "wowjs";
 
 
 class Skills extends Component{
-  constructor(){
-    super()
-
-  }
-
   componentDidMount() {
     const wow = new WOW.WOW();
     wow.init();
@@ -49,7 +44,7 @@ class Skills extends Component{
               data-wow-offset="10"
               data-wow-iteration="1"
             >
-              <img src="./js.png" />
+              <img src="./js.png" alt="js"/>
             </div>
             <div className="skills__languages-sets-item wow fadeInDown"
               data-wow-duration="2s"
@@ -57,7 +52,7 @@ class Skills extends Component{
               data-wow-offset="10"
               data-wow-iteration="1"
             >
-              <img src="./python.png" />
+              <img src="./python.png" alt="python" />
             </div>
             <div className="skills__languages-sets-item wow fadeInUp"
               data-wow-duration="2s"
@@ -65,7 +60,7 @@ class Skills extends Component{
               data-wow-offset="10"
               data-wow-iteration="1"
             >
-              <img src="./html.png" />
+              <img src="./html.png" alt="html" />
             </div>
             <div className="skills__languages-sets-item wow slideInRight"
               data-wow-duration="2s"
@@ -73,7 +68,7 @@ class Skills extends Component{
               data-wow-offset="10"
               data-wow-iteration="1"
             >
-              <img src="./css.png" />
+              <img src="./css.png" alt="css" />
             </div>
           </div>
         </div>
@@ -83,7 +78,7 @@ class Skills extends Component{
               return (
                 <div className="skills__items-sets" key={idx}>
                   <div className="skills__items-sets-img">
-                    <img src={set.img} />
+                    <img src={set.img} alt="skill sets" />
                   </div>
                   <div className="skills__items-sets-title mt-2">{set.title}</div>
                   <ul className="skills__items-sets-content">
@@ -91,7 +86,7 @@ class Skills extends Component{
                       set.list.map((item, idx) => {
                         return (
                           <li key={idx} className="py-1">
-                            <img className="bullet mr-3" src="./bullet.png" />{item}
+                            <img className="bullet mr-3" src="./bullet.png" alt="bullet point"/>{item}
                           </li>
                         )
                       })
