@@ -13,22 +13,26 @@ class Skills extends Component{
     const skills = [
       {
         img: "./book.png",
+        alt: "book",
         title : "Frameworks & Libraries",
         list : ["React.js + Redux", "Vue.js + Vuex", "Node.js + Express.js", "Flask", "Django", "Axios", "Sass", "Bootstraps", "Vuetify"]
       },
       {
         img: "./database.png",
+        alt: "database",
         title : "Methodologies & Database",
         list : ["RESTful architechture", "CRUD pattern", "MVC pattern", "Responsive Design", "MongoDB", "Firebase", "PostgreSQL", "SQLite"]
       },
       {
         img: "./idea.png",
+        alt: "Management & Tools",
         title : "Management & Tools",
         list : ["Agile scrum methodology", "Jira", "Notion", "Figma", "Github(Git controls)", "Bitbucket", "Jenkins(ci/cd)", "Graylog"]
       },
       {
         img: "./skill.png",
         title : "Personal Skills",
+        alt: "Personal Skills",
         list : ["Detail-Oriented", "Problem-solving", "Teamwork and Collaboration", "Communication", "Adaptability"]
       },
     ];
@@ -78,7 +82,7 @@ class Skills extends Component{
               return (
                 <div className="skills__items-sets" key={idx}>
                   <div className="skills__items-sets-img">
-                    <img src={set.img} alt="skill sets" />
+                    <img src={set.img} alt={set.alt} />
                   </div>
                   <div className="skills__items-sets-title mt-2">{set.title}</div>
                   <ul className="skills__items-sets-content">

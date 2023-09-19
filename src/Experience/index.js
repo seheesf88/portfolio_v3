@@ -14,8 +14,6 @@ const Experience = () => {
       <div className="h1 text-center">Work Experience.</div>
       <VerticalTimeline>
         <VerticalTimelineElement
-          // contentStyle={{ background: 'rgb(33, 150, 243)', color: '#000'}}
-          // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
           date="March 2021 - July 2023"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={
