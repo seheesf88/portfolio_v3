@@ -32,7 +32,7 @@ const NavBar = () => {
     <div className="navBar row px-2 g-0 px-md-5 py-2">
       <div className="navBar__logo col-6">
         <Link style={{ textDecoration: 'none'}} to="/">
-          <img style={{ width: '180px', paddingTop: '18px'}} src="./logo.png"/>
+          <img style={{ width: '180px', paddingTop: '18px'}} src="./logo.png" alt="logo" />
         </Link>
       </div>
       <div className={`navBar__items col-6 px-5 ${menuVisible ? 'show' : ''}`}>

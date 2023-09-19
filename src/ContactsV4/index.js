@@ -21,10 +21,10 @@ const ContactsV4 = () => {
           <div>San Francisco, CA</div>
           <div>seheesf88@gmail.com</div>
           <div className="contacts__content-links mt-4">
-            <span className="contacts__content-link"><a href="mailto:seheesf88@gmail.com"><img className="contacts__content-link-icon" src="./icons/email.svg" /></a></span>
-            <span className="contacts__content-link"><a href="https://www.linkedin.com/in/sehee-son/"><img className="contacts__content-link-icon" src="./icons/linkedin.svg" /></a></span>
-            <span className="contacts__content-link"><a href="https://github.com/seheesf88"><img className="contacts__content-link-icon" src="./icons/github.svg" /></a></span>
-            <span className="contacts__content-link"><a href="../SeHee_Son_resume.pdf" download><img className="contacts__content-link-icon" src="./icons/download.svg" /></a></span>
+            <span className="contacts__content-link"><a href="mailto:seheesf88@gmail.com"><img className="contacts__content-link-icon" alt="email" src="./icons/email.svg" /></a></span>
+            <span className="contacts__content-link"><a href="https://www.linkedin.com/in/sehee-son/"><img className="contacts__content-link-icon" alt="linkedin" src="./icons/linkedin.svg" /></a></span>
+            <span className="contacts__content-link"><a href="https://github.com/seheesf88"><img className="contacts__content-link-icon" alt="github" src="./icons/github.svg" /></a></span>
+            <span className="contacts__content-link"><a href="../SeHee_Son_resume.pdf" download><img className="contacts__content-link-icon" alt="download" src="./icons/download.svg" /></a></span>
           </div>
         </div>
       </div>

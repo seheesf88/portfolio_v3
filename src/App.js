@@ -9,7 +9,6 @@ import Experience from './Experience';
 import ContactsV4 from './ContactsV4';
 
 const App = () => {
-  const v4 = true;
   return (
     <main>
       <NavBarV4 />

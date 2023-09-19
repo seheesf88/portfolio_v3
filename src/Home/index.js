@@ -13,36 +13,7 @@ const Home = () => {
   const keyboard = './img/keyboard.svg';
   const coffee = './img/coffee.svg';
 
-  //default settings
   let fullPg = 5
-
-  //360x640 ~ 414×896
-  //601x962 ~ 1280x800
-  //1280x720 ~ 1920x1080
-  const screenRatio = {
-    sm: {
-      intro_pg: { factor: "1", offset: "0"},
-      skills_pg: { factor: "3", offset: "1.5"},
-      experience_pg: { factor: "3.5", offset: "3.5"},
-      project_pg: {factor: "3.5", offset: "7"},
-      contact_pg: {factor: "1", offset: "7.5"}
-    },
-    md: {
-      intro_pg: { factor: "1", offset: "0"},
-      skills_pg: { factor: "3", offset: "1.5"},
-      experience_pg: { factor: "3.5", offset: "3.5"},
-      project_pg: {factor: "3.5", offset: "7"},
-      contact_pg: {factor: "1", offset: "7.5"}
-    },
-    lg: {
-      intro_pg: { factor: "1", offset: "0"},
-      skills_pg: { factor: "1.5", offset: "1.5"},
-      experience_pg: { factor: "3", offset: "3"},
-      project_pg: {factor: "1.5", offset: "6"},
-      contact_pg: {factor: "1", offset: "7.5"}
-    }
-  }
-
   const TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
