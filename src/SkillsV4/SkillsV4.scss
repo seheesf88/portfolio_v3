@@ -1,4 +1,7 @@
 .skills {
+  height: 100vh;
+  background-color: #efdfac;
+  
   &__languages {
     display: flex;
     justify-content: center;
@@ -24,6 +27,7 @@
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
+    background-color: #efdfac;
 
     @media only screen and (max-width: 768px) {
       padding-left: 0%;
