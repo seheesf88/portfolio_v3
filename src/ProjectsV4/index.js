@@ -13,7 +13,8 @@ class Projects extends Component{
       {
         title: "Tom Riddle's Diary Chat App",
         img: "./img/magicDiary.png",
-        githubLink: "https://github.com/seheesf88/magic-diary-chat",
+        githubFrontendLink: "https://github.com/seheesf88/magic-diary-chat",
+        githubBackendLink: "https://github.com/seheesf88/magic-diary",
         deployURl: "https://seheesf88.github.io/magic-diary-chat/",
         techStack: ["JavaScript", "Vue.js", "Sass", "bootstrap", "Node.js", "Express.js", "openai - fine-tunning"], 
         description: [
@@ -25,9 +26,10 @@ class Projects extends Component{
       {
         title: "The Stock Chart app",
         img: "./img/chartApp.png",
-        githubLink: "https://github.com/seheesf88/the-chart-app",
+        githubFrontendLink: "https://github.com/seheesf88/the-chart-app",
+        githubBackendLink: false,
         deployURl: "https://seheesf88.github.io/the-chart-app/",
-        techStack: ["JavaScript", "React.js", "chart.js"], 
+        techStack: ["JavaScript", "React.js", "chart.js", "3rd party api", "Sass", "bootstrap"], 
         description: [
           "The Stock Price Visualization App is a user-friendly tool for visualizing daily stock prices of various companies.",
           "Input a stock symbol and specify the desired number of days to generate a historical price chart.",
@@ -43,8 +45,9 @@ class Projects extends Component{
           { 
             projectData.map((project, idx) => {
               return (
-              <div 
-                className="projects__project-panel mx-2 px-4"
+              <div
+                key={idx}
+                className="projects__project-panel px-4"
               >
                 <div className="projects__project-img-container">
                   <img src={project.img} alt="project image" className="projects__project-img"/>
@@ -79,7 +82,14 @@ class Projects extends Component{
                   </div>
     
                   <div className="projects__project-links text-center">
-                    <a href={project.githubLink}> Github</a>
+                    <a href={project.githubFrontendLink}> Github(Frontend) </a>
+                    { project.githubBackendLink ?
+                      <span>
+                        <span className="mx-3"> | </span> <a href={project.githubBackendLink}> Github (Backend)</a>
+                      </span>
+                      :
+                      <></>
+                    }
                     <span className="mx-3"> | </span>
                     <a href={project.deployURl}>Try it</a>
                   </div>
