@@ -86,7 +86,7 @@ const Home = () => {
           className="home__greeting-intro"
         >
           <div className="home__greeting-msg">
-            <div className="home__greeting-content-hi mr-2">Hi,  </div>
+            <div className="home__greeting-content-hi">Hi,  </div>
             <div className="home__greeting-content">
               <span className="abbr">I am</span>
               <span
@@ -121,7 +121,7 @@ const Home = () => {
 
         <ParallaxLayer
           offset="1.8"
-          speed="0.7"
+          speed="0.6"
           onClick={() => ref.current.scrollTo(3)}
           className="home__intro-message-container-end"
         >
@@ -134,7 +134,7 @@ const Home = () => {
 
         <ParallaxLayer
           offset="2.1"
-          speed="1.2"
+          speed="1.4"
           onClick={() => ref.current.scrollTo(4)}
           className="home__intro-message-container"
         >
@@ -184,6 +184,7 @@ const Home = () => {
           speed="2.1"
           sticky={{start: "3.2", end: "5"}}
           className="home__mango-container"
+          onClick={() => ref.current.scrollTo(1)}
         >
           <img src={mango} alt="mango-cat" className="home__mango" />
         </ParallaxLayer>
