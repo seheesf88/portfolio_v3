@@ -11,9 +11,9 @@
 
 <g>
 
-<polyline fill="none" points="4 8.2 12 14.1 20 8.2" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+<polyline fill="none" points="4 8.2 12 14.1 20 8.2" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
 
-<rect fill="none" height="14" rx="2" ry="2" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18" x="3" y="6.5"/>
+<rect fill="none" height="14" rx="2" ry="2" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18" x="3" y="6.5"/>
 
 </g>
 
